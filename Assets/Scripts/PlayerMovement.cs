@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private PlayerData originalPlayerData;
@@ -11,14 +11,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private InputActionReference verticalInputAction;
     [SerializeField] private InputActionReference horizontalInputAction;
+    [SerializeField] private InputActionReference shootInputAction;
 
     private PlayerData playerData;
     private Vector2 movementInput;
+    private bool shootInputPressed;
+    private bool movementBlocked;
 
     private void OnEnable()
     {
         verticalInputAction.action.Enable();
         horizontalInputAction.action.Enable();
+        shootInputAction.action.Enable();
     }
 
     private void Start() => playerData = originalPlayerData.GetCopy();
@@ -39,6 +43,10 @@ public class PlayerMovement : MonoBehaviour
 
         movementInput = new Vector2(horizontalInput, verticalInput);
         movementInput.Normalize();
+
+        shootInputPressed = shootInputAction.action.IsPressed();
+
+        movementBlocked = shootInputPressed;
     }
 
     private void FaceDirection()
@@ -50,19 +58,29 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void Move() => playerRB.velocity = new Vector2(movementInput.x * playerData.speed, movementInput.y * playerData.speed);
+    private void Move()
+    {
+        if (!movementBlocked)
+            playerRB.velocity = new Vector2(movementInput.x * playerData.speed, movementInput.y * playerData.speed);
+        else
+            playerRB.velocity = Vector2.zero;
+    }
 
     private void Animate()
     {
-        if (movementInput != Vector2.zero)
-            playerAnimator.CrossFade(Animations.Player.Run, 0f, 0);
-        else
-            playerAnimator.CrossFade(Animations.Player.Idle, 0f, 0);
+        if (!movementBlocked)
+        {
+            if (movementInput != Vector2.zero)
+                playerAnimator.CrossFade(Animations.Player.Run, 0f, 0);
+            else if (!shootInputPressed)
+                playerAnimator.CrossFade(Animations.Player.Idle, 0f, 0);
+        }
     }
 
     private void OnDisable()
     {
         verticalInputAction.action.Disable();
         horizontalInputAction.action.Disable();
+        shootInputAction.action.Disable();
     }
 }
