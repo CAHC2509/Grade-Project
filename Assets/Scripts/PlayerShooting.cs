@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[SelectionBase]
 public class PlayerShooting : MonoBehaviour
 {
+    [SerializeField] private PlayerData playerData;
     [SerializeField] private Bullet bulletPrefab;
     [SerializeField] private Transform firePoint;
     [SerializeField] private Animator playerAnimator;
@@ -12,6 +14,8 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private InputActionReference shootInputAction;
 
     private void OnEnable() => shootInputAction.action.Enable();
+
+    private void Start() => SetFireRate();
 
     private void Update()
     {
@@ -24,6 +28,8 @@ public class PlayerShooting : MonoBehaviour
         Bullet instanciatedBullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation, null);
         instanciatedBullet.ApplyBulletSpeed(firePoint.right);
     }
+
+    public void SetFireRate() => playerAnimator.SetFloat(Animations.Player.Parameters.ShootingSpeedMultiplier, playerData.fireRate);
 
     private void OnDisable() => shootInputAction.action.Disable();
 }

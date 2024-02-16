@@ -8,7 +8,7 @@ public class PlayerData : ScriptableObject
     public float speed = 5f;
 
     [Space, Header("Shooting stats")]
-    public float fireRate = 1f;
+    [Range(1, 2)] public float fireRate = 1f;
 
     public PlayerData GetCopy()
     {
