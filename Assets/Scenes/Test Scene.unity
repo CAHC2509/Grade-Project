@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: 49e69ca3237a9b04a88f32444c8146ef, type: 2}
-  bulletPrefab: {fileID: 3048990831446425847, guid: c5dc861052bc75448b37398e0dcf2ea2, type: 3}
+  bulletPrefab: {fileID: 7378932309963734558, guid: fcbf52199f1bbfa4db75855193622364, type: 3}
   firePoint: {fileID: 1008800444}
   playerAnimator: {fileID: 161463620}
   playerMovement: {fileID: 161463616}
@@ -764,7 +764,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.56796724, g: 0.7007598, b: 0.90943396, a: 0}
+  m_BackGroundColor: {r: 0.22652186, g: 0.29284316, b: 0.3962264, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
