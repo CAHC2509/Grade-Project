@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "G-Impact",
+                    "type": "Button",
+                    "id": "36453301-3de8-45c0-bdd9-d3d37573058f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -179,17 +188,6 @@
                 },
                 {
                     "name": "",
-                    "id": "6444577d-47cf-4099-ab06-207829497b3c",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "6ad76b03-55a4-4c2d-afc3-0c4aab882221",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -207,6 +205,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "16b1a1bf-f40a-4e6b-ad86-3a118a211519",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "G-Impact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4dce5808-b944-44bd-b22e-739b2090c519",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "G-Impact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

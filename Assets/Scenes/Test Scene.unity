@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 161463617}
   - component: {fileID: 161463616}
   - component: {fileID: 161463621}
+  - component: {fileID: 161463622}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -367,6 +368,20 @@ MonoBehaviour:
   playerAnimator: {fileID: 161463620}
   playerMovement: {fileID: 161463616}
   shootInputAction: {fileID: -1484250700847553634, guid: fa02262d5d0ae7c4f8581f8b38df4021, type: 3}
+--- !u!114 &161463622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161463613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc259485fcc056e47b752f3197ae8044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ability: {fileID: 11400000, guid: eaed68137b3903147a611844ddad824c, type: 2}
+  abilityInput: {fileID: -5681731929737083426, guid: fa02262d5d0ae7c4f8581f8b38df4021, type: 3}
 --- !u!1 &222474692
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +393,7 @@ GameObject:
   - component: {fileID: 222474693}
   - component: {fileID: 222474695}
   - component: {fileID: 222474694}
+  - component: {fileID: 222474696}
   m_Layer: 0
   m_Name: Capsule (3)
   m_TagString: Untagged
@@ -487,6 +503,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &222474696
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222474692}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &259409950
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +541,7 @@ GameObject:
   - component: {fileID: 259409951}
   - component: {fileID: 259409953}
   - component: {fileID: 259409952}
+  - component: {fileID: 259409954}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -607,6 +651,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &259409954
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259409950}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &284489104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1121,7 @@ GameObject:
   - component: {fileID: 1353258357}
   - component: {fileID: 1353258359}
   - component: {fileID: 1353258358}
+  - component: {fileID: 1353258360}
   m_Layer: 0
   m_Name: Capsule (2)
   m_TagString: Untagged
@@ -1159,6 +1231,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1353258360
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353258356}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1538330908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,6 +1269,7 @@ GameObject:
   - component: {fileID: 1538330909}
   - component: {fileID: 1538330911}
   - component: {fileID: 1538330910}
+  - component: {fileID: 1538330912}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -1279,6 +1379,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1538330912
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538330908}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1962256914
 GameObject:
   m_ObjectHideFlags: 3
