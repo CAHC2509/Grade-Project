@@ -174,6 +174,7 @@ GameObject:
   - component: {fileID: 161463616}
   - component: {fileID: 161463621}
   - component: {fileID: 161463622}
+  - component: {fileID: 161463623}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -215,6 +216,7 @@ MonoBehaviour:
   verticalInputAction: {fileID: -5522043345262103094, guid: fa02262d5d0ae7c4f8581f8b38df4021, type: 3}
   horizontalInputAction: {fileID: 6546412140465030785, guid: fa02262d5d0ae7c4f8581f8b38df4021, type: 3}
   shootInputAction: {fileID: -1484250700847553634, guid: fa02262d5d0ae7c4f8581f8b38df4021, type: 3}
+  playerData: {fileID: 0}
 --- !u!50 &161463617
 Rigidbody2D:
   serializedVersion: 4
@@ -382,6 +384,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: eaed68137b3903147a611844ddad824c, type: 2}
   abilityInput: {fileID: -5681731929737083426, guid: fa02262d5d0ae7c4f8581f8b38df4021, type: 3}
+--- !u!114 &161463623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161463613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc259485fcc056e47b752f3197ae8044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ability: {fileID: 11400000, guid: 25d1fd926834bbc41bc87e8cae5fc60f, type: 2}
+  abilityInput: {fileID: -6347864700817126106, guid: fa02262d5d0ae7c4f8581f8b38df4021, type: 3}
 --- !u!1 &222474692
 GameObject:
   m_ObjectHideFlags: 0
