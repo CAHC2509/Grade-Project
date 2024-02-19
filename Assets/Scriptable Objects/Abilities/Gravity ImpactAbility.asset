@@ -15,5 +15,5 @@ MonoBehaviour:
   name: Gravity Impact
   cooldownTime: 3
   activeTime: 0.25
-  impactForce: 10
+  impactForce: 100
   explosionRadius: 5
