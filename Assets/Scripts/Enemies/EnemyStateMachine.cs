@@ -7,19 +7,30 @@ public class EnemyStateMachine : MonoBehaviour
 {
     [SerializeField] private EnemyController enemyController;
 
+    public EnemyIdleState idleState = new EnemyIdleState();
+    public EnemyChaseState chaseState = new EnemyChaseState();
+    public EnemyMeleeAttackState meleeAttackState = new EnemyMeleeAttackState();
+    public EnemyDistanceAttackState distanceAttackState = new EnemyDistanceAttackState();
+
     private EnemyBaseState currentState;
-    private EnemyPatrolState patrolState = new EnemyPatrolState();
-    private EnemyChaseState chaseState = new EnemyChaseState();
+    private string currentEnemyState;
 
     public EnemyController controller => enemyController;
 
-    private void Start()
-    {
-        currentState = chaseState;
-    }
+    private void Start() => SwithState(idleState);
 
     private void Update()
     {
         currentState.UpdateState(this);
+        currentEnemyState = currentState.ToString();
     }
+
+    public void SwithState(EnemyBaseState state)
+    {
+        currentState = state;
+        currentState.EnterState(this);
+    }
+
+    [ContextMenu("Chase player")]
+    public void SetChaseState() => SwithState(chaseState);
 }

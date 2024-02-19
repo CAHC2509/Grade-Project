@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerShooting : MonoBehaviour
 {
     [SerializeField] private PlayerData playerData;
-    [SerializeField] private Bullet bulletPrefab;
+    [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private Transform firePoint;
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private PlayerMovement playerMovement;
@@ -25,8 +25,8 @@ public class PlayerShooting : MonoBehaviour
 
     public void Shoot()
     {
-        Bullet instanciatedBullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation, null);
-        instanciatedBullet.ApplyBulletSpeed(firePoint.right);
+        Projectile instanciatedProjectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation, null);
+        instanciatedProjectile.ApplyBulletSpeed(firePoint.right);
     }
 
     public void SetFireRate() => playerAnimator.SetFloat(Animations.Player.Parameters.ShootingSpeedMultiplier, playerData.fireRate);

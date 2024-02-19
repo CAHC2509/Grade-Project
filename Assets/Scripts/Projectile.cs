@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D), typeof(Rigidbody2D))]
-public class Bullet : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
-    [SerializeField] private BulletData bulletData;
+    [SerializeField] private ProjectileData bulletData;
     [SerializeField] private Rigidbody2D bulletRB;
 
     private void Start() => Destroy(gameObject, bulletData.lifeTime);
@@ -14,6 +14,9 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy"))
+            return;
+        else
+            Destroy(gameObject);
     }
 }
