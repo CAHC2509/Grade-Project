@@ -11,4 +11,11 @@ public static class Animations
             public static readonly string ShootingSpeedMultiplier = "ShootingSpeedMultiplier";
         }
     }
+
+    public static class Enemy
+    {
+        public static readonly string Idle = "Idle";
+        public static readonly string Run = "Run";
+        public static readonly string Shoot = "Shoot";
+    }
 }

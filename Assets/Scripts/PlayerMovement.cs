@@ -18,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
     private bool shootInputPressed;
     private bool movementBlocked;
 
+    public static PlayerMovement Instance { get; private set; }
+
+    private void Awake() => Instance = this;
+
     private void OnEnable()
     {
         verticalInputAction.action.Enable();
