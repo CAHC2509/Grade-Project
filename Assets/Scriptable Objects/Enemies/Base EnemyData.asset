@@ -17,3 +17,4 @@ MonoBehaviour:
   speed: 4
   rangeAttackDistance: 5
   meleeAttackDistance: 2.5
+  fieldOfViewAngle: 60

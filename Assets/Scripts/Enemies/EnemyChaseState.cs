@@ -15,8 +15,9 @@ public class EnemyChaseState : EnemyBaseState
         EnemyController enemyController = stateMachine.controller;
         Vector3 playerPosition = PlayerMovement.Instance.transform.position;
         Vector3 enemyPosition = enemyController.transform.position;
-        
-        enemyController.navMeshAgent.SetDestination(playerPosition);
+        Vector3 targetPosition = CalculateLateralPosition(playerPosition, enemyPosition);
+
+        enemyController.navMeshAgent.SetDestination(targetPosition);
         enemyController.CheckFacing();
 
         EnemyData.AttackType attackType = enemyController.enemyData.attackType;
@@ -43,5 +44,15 @@ public class EnemyChaseState : EnemyBaseState
             default:
                 break;
         }
+    }
+
+    private Vector3 CalculateLateralPosition(Vector3 playerPosition, Vector3 enemyPosition)
+    {
+        Vector3 directionToPlayer = playerPosition - enemyPosition;
+        directionToPlayer.y = 0f;
+        Vector3 lateralDirection = Vector3.Cross(directionToPlayer.normalized, Vector3.up);
+        float lateralDistance = 2.5f;
+
+        return playerPosition + lateralDirection * lateralDistance;
     }
 }

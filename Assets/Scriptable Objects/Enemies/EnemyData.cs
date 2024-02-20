@@ -19,6 +19,7 @@ public class EnemyData : ScriptableObject
     [Space, Header("Attack stats")]
     public float rangeAttackDistance = 5f;
     public float meleeAttackDistance = 1.5f;
+    public float fieldOfViewAngle = 25f;
 
     public EnemyData GetCopy()
     {
@@ -28,6 +29,7 @@ public class EnemyData : ScriptableObject
         copy.speed = speed;
         copy.rangeAttackDistance = rangeAttackDistance;
         copy.meleeAttackDistance = meleeAttackDistance;
+        copy.fieldOfViewAngle = fieldOfViewAngle;
 
         return copy;
     }
