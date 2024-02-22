@@ -8,7 +8,9 @@ public class Projectile : MonoBehaviour
     [SerializeField] private ProjectileData bulletData;
     [SerializeField] private Rigidbody2D bulletRB;
 
-    private void Start() => Destroy(gameObject, bulletData.lifeTime);
+    private void Start() => Invoke(nameof(DisableProjectile), bulletData.lifeTime);
+
+    private void DisableProjectile() => gameObject.SetActive(false);
 
     public void ApplyBulletSpeed(Vector2 direction) => bulletRB.velocity = direction.normalized * bulletData.speed;
 
@@ -17,6 +19,6 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy"))
             return;
         else
-            Destroy(gameObject);
+            gameObject.SetActive(false);
     }
 }

@@ -25,8 +25,12 @@ public class PlayerShooting : MonoBehaviour
 
     public void Shoot()
     {
-        Projectile instanciatedProjectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation, null);
-        instanciatedProjectile.ApplyBulletSpeed(firePoint.right);
+        GameObject instanciatedProjectile = ObjectPool.Instance.GetPooledObject(ObjectPool.ObjectType.PROJECTILE);
+        instanciatedProjectile.transform.position = firePoint.transform.position;
+        instanciatedProjectile?.SetActive(true);
+
+        Projectile projectileController = instanciatedProjectile.GetComponent<Projectile>();
+        projectileController?.ApplyBulletSpeed(firePoint.right);
     }
 
     public void SetFireRate() => playerAnimator.SetFloat(Animations.Player.Parameters.ShootingSpeedMultiplier, playerData.fireRate);

@@ -37,8 +37,12 @@ public class EnemyController : MonoBehaviour
 
     public void LaunchProjectile()
     {
-        Projectile instanciatedBullet = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation, null);
-        instanciatedBullet.ApplyBulletSpeed(firePoint.up);
+        GameObject instanciatedProjectile = ObjectPool.Instance.GetPooledObject(ObjectPool.ObjectType.PROJECTILE);
+        instanciatedProjectile.transform.position = firePoint.transform.position;
+        instanciatedProjectile?.SetActive(true);
+
+        Projectile projectileController = instanciatedProjectile.GetComponent<Projectile>();
+        projectileController?.ApplyBulletSpeed(firePoint.up);
     }
 
     public bool IsPlayerInFieldOfVision()
