@@ -16,9 +16,11 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy"))
-            return;
-        else
-            gameObject.SetActive(false);
+        IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
+
+        if (damageable is IDamageable)
+            damageable.TakeDamage(bulletData.damage);
+
+        gameObject.SetActive(false);
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, IDamageable
 {
     [Header("Components")]
     [SerializeField] private EnemyData originalEnemyData;
@@ -43,6 +43,16 @@ public class EnemyController : MonoBehaviour
 
         Projectile projectileController = instanciatedProjectile.GetComponent<Projectile>();
         projectileController?.ApplyBulletSpeed(firePoint.up);
+    }
+
+    public void TakeDamage(float damageAmount)
+    {
+        enemyData.life -= damageAmount;
+
+        if (enemyData.life <= 0f)
+        {
+            Debug.Log("Enemy Killed!");
+        }
     }
 
     public bool IsPlayerInFieldOfVision()

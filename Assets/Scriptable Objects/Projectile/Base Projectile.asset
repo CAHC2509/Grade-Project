@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34883f5798dae0243b2fae44abfc0b38, type: 3}
   m_Name: Base Projectile
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 35
   speed: 10
   lifeTime: 5
