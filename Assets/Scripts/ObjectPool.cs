@@ -9,12 +9,21 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] private int projectilesAmount;
     [SerializeField] private Transform projectilesParent;
 
+    [Space, Header("Projectiles particles")]
+    [SerializeField] private GameObject greenParticlesPrefab;
+    [SerializeField] private GameObject blueParticlesPrefab;
+    [SerializeField] private Transform projectilesParticlesParent;
+
     private List<GameObject> projectilesPool = new List<GameObject>();
+    private List<GameObject> greenParticlesPool = new List<GameObject>();
+    private List<GameObject> blueParticlesPool = new List<GameObject>();
 
     public enum ObjectType
     {
         NONE,
-        PROJECTILE
+        PROJECTILE,
+        GREEN_PARTICLES,
+        BLUE_PARTICLES
     }
 
     public static ObjectPool Instance;
@@ -24,6 +33,8 @@ public class ObjectPool : MonoBehaviour
     private void Start()
     {
         CreatePool(projectilePrefab.gameObject, projectilesAmount, projectilesParent, projectilesPool);
+        CreatePool(greenParticlesPrefab, projectilesAmount, projectilesParticlesParent, greenParticlesPool);
+        CreatePool(blueParticlesPrefab, projectilesAmount, projectilesParticlesParent, blueParticlesPool);
     }
 
     private void CreatePool(GameObject objectPrefab, int objectsAmount, Transform targetParent, List<GameObject> targetPool)
@@ -44,6 +55,14 @@ public class ObjectPool : MonoBehaviour
         {
             case ObjectType.PROJECTILE:
                 targetPool = projectilesPool;
+                break;
+
+            case ObjectType.GREEN_PARTICLES:
+                targetPool = greenParticlesPool;
+                break;
+
+            case ObjectType.BLUE_PARTICLES:
+                targetPool = blueParticlesPool;
                 break;
 
             default:

@@ -7,12 +7,24 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] private ProjectileData bulletData;
     [SerializeField] private Rigidbody2D bulletRB;
+    [SerializeField] private BulletColor bulletColor;
+
+    private Vector2 bulletDiection;
+    private enum BulletColor
+    {
+        BLUE,
+        GREEN
+    }
 
     private void Start() => Invoke(nameof(DisableProjectile), bulletData.lifeTime);
 
-    private void DisableProjectile() => gameObject.SetActive(false);
+    public void ApplyBulletSpeed(Vector2 direction)
+    {
+        bulletDiection = direction;
+        bulletRB.velocity = direction.normalized * bulletData.speed;
+    }
 
-    public void ApplyBulletSpeed(Vector2 direction) => bulletRB.velocity = direction.normalized * bulletData.speed;
+    private void DisableProjectile() => gameObject.SetActive(false);
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,6 +33,16 @@ public class Projectile : MonoBehaviour
         if (damageable is IDamageable)
             damageable.TakeDamage(bulletData.damage);
 
+        ObjectPool.ObjectType objectType = bulletColor == BulletColor.BLUE ? ObjectPool.ObjectType.BLUE_PARTICLES : ObjectPool.ObjectType.GREEN_PARTICLES;
+        GameObject pooledParticle = ObjectPool.Instance.GetPooledObject(objectType);
+        pooledParticle.transform.position = transform.position;
+
+        var particleLocalScale = pooledParticle.transform.localScale;
+
+        if (bulletDiection.x < 0f)
+            pooledParticle.transform.localScale = new Vector2(-particleLocalScale.x, particleLocalScale.y);
+
+        pooledParticle.SetActive(true);
         gameObject.SetActive(false);
     }
 }
