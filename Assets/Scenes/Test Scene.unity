@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 50929580}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -735,7 +735,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 227551012}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -772,13 +772,13 @@ GameObject:
   - component: {fileID: 231909488}
   - component: {fileID: 231909492}
   - component: {fileID: 231909491}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &231909485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -918,7 +918,7 @@ MonoBehaviour:
   originalEnemyData: {fileID: 11400000, guid: 64c452a29e516f944858c5326490abc7, type: 2}
   meshAgent: {fileID: 231909488}
   enemyAnimator: {fileID: 231909490}
-  projectilePrefab: {fileID: 42906010619612535, guid: fcbf52199f1bbfa4db75855193622364, type: 3}
+  projectilePrefab: {fileID: 1871152266651697960, guid: 6b3b90f94ac247c4fbcba533ad4be6da, type: 3}
   firePoint: {fileID: 50929580}
   enemyData: {fileID: 11400000, guid: 64c452a29e516f944858c5326490abc7, type: 2}
 --- !u!58 &231909493
@@ -2037,13 +2037,13 @@ GameObject:
   - component: {fileID: 1481232378}
   - component: {fileID: 1481232377}
   - component: {fileID: 1481232376}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1481232376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2072,7 +2072,7 @@ MonoBehaviour:
   originalEnemyData: {fileID: 11400000, guid: 64c452a29e516f944858c5326490abc7, type: 2}
   meshAgent: {fileID: 1481232378}
   enemyAnimator: {fileID: 1481232380}
-  projectilePrefab: {fileID: 42906010619612535, guid: fcbf52199f1bbfa4db75855193622364, type: 3}
+  projectilePrefab: {fileID: 1871152266651697960, guid: 6b3b90f94ac247c4fbcba533ad4be6da, type: 3}
   firePoint: {fileID: 227551012}
   enemyData: {fileID: 11400000, guid: 64c452a29e516f944858c5326490abc7, type: 2}
 --- !u!195 &1481232378
@@ -2432,8 +2432,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70214c8117bdd654f8d0edc09d95441e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 42906010619612535, guid: fcbf52199f1bbfa4db75855193622364, type: 3}
-  projectilesAmount: 50
+  blueProjectilePrefab: {fileID: 42906010619612535, guid: fcbf52199f1bbfa4db75855193622364, type: 3}
+  GreenProjectilePrefab: {fileID: 1871152266651697960, guid: 6b3b90f94ac247c4fbcba533ad4be6da, type: 3}
+  blueProjectilesAmount: 20
+  greenProjectilesAmount: 40
   projectilesParent: {fileID: 2147083718}
   greenParticlesPrefab: {fileID: 7607578839524449285, guid: ef2f081086eeb414ba277b6f070120e4, type: 3}
   blueParticlesPrefab: {fileID: 3599437791200316295, guid: 546dd7bc6d9a6ab419fb9e6538634aab, type: 3}

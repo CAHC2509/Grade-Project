@@ -37,7 +37,7 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     public void LaunchProjectile()
     {
-        GameObject instanciatedProjectile = ObjectPool.Instance.GetPooledObject(ObjectPool.ObjectType.PROJECTILE);
+        GameObject instanciatedProjectile = ObjectPool.Instance.GetPooledObject(ObjectPool.ObjectType.GREEN_PROJECTILE);
         instanciatedProjectile.transform.position = firePoint.transform.position;
         instanciatedProjectile?.SetActive(true);
 

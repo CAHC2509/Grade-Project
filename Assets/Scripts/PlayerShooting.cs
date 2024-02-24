@@ -25,7 +25,7 @@ public class PlayerShooting : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject instanciatedProjectile = ObjectPool.Instance.GetPooledObject(ObjectPool.ObjectType.PROJECTILE);
+        GameObject instanciatedProjectile = ObjectPool.Instance.GetPooledObject(ObjectPool.ObjectType.BLUE_PROJECTILE);
         instanciatedProjectile.transform.position = firePoint.transform.position;
         instanciatedProjectile?.SetActive(true);
 
