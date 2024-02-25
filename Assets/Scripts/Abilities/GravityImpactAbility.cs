@@ -5,6 +5,7 @@ using UnityEngine;
 public class GravityImpactAbility : Ability
 {
     public float impactForce;
+    public float impactDamage;
     public float explosionRadius;
 
     public override void Activate(GameObject parent)
@@ -23,6 +24,11 @@ public class GravityImpactAbility : Ability
                 Vector2 direction = (collider.transform.position - parent.transform.position).normalized;
                 rb.AddForce(direction * impactForce, ForceMode2D.Impulse);
             }
+
+            IDamageable damageable = collider.gameObject.GetComponent<IDamageable>();
+
+            if (damageable is IDamageable)
+                damageable.TakeDamage(impactDamage);
         }
     }
 }

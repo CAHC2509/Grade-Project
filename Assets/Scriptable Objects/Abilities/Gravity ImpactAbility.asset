@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43234d51c6d3054bb0b70f26625a083, type: 3}
   m_Name: Gravity ImpactAbility
   m_EditorClassIdentifier: 
-  name: Gravity Impact
+  abilityName: Gravity Impact
   cooldownTime: 3
   activeTime: 0.25
-  impactForce: 100
+  impactForce: 40
+  impactDamage: 70
   explosionRadius: 5

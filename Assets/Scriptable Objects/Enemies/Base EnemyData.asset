@@ -15,6 +15,6 @@ MonoBehaviour:
   attackType: 1
   life: 100
   speed: 4
-  rangeAttackDistance: 5
+  rangeAttackDistance: 6
   meleeAttackDistance: 2.5
   fieldOfViewAngle: 60
