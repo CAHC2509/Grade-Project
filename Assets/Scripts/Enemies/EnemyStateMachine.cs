@@ -11,6 +11,7 @@ public class EnemyStateMachine : MonoBehaviour
     public EnemyChaseState chaseState = new EnemyChaseState();
     public EnemyMeleeAttackState meleeAttackState = new EnemyMeleeAttackState();
     public EnemyDistanceAttackState distanceAttackState = new EnemyDistanceAttackState();
+    public EnemyDeathState deathState = new EnemyDeathState();
 
     private EnemyBaseState currentState;
     private string currentEnemyState;
@@ -32,5 +33,5 @@ public class EnemyStateMachine : MonoBehaviour
     }
 
     [ContextMenu("Chase player")]
-    public void SetChaseState() => SwithState(chaseState);
+    public void ChasePlayer() => SwithState(chaseState);
 }

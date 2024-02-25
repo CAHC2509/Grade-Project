@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     [SerializeField] private EnemyData originalEnemyData;
     [SerializeField] private NavMeshAgent meshAgent;
     [SerializeField] private Animator enemyAnimator;
+    [SerializeField] private EnemyStateMachine stateMachine;
 
     [Space, Header("Distance attack settings")]
     [SerializeField] private Projectile projectilePrefab;
@@ -50,9 +51,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         enemyData.life -= damageAmount;
 
         if (enemyData.life <= 0f)
-        {
-            Debug.Log("Enemy Killed!");
-        }
+            stateMachine.SwithState(stateMachine.deathState);
     }
 
     public bool IsPlayerInFieldOfVision()

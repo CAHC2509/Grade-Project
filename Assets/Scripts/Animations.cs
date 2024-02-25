@@ -17,5 +17,6 @@ public static class Animations
         public static readonly string Idle = "Idle";
         public static readonly string Run = "Run";
         public static readonly string Shoot = "Shoot";
+        public static readonly string Death = "Death";
     }
 }
