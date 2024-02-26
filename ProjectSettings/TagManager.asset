@@ -42,6 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1973814705
+    locked: 0
+  - name: Rooms
+    uniqueID: 3599349755
+    locked: 0
+  - name: Details
+    uniqueID: 1227844253
+    locked: 0
   - name: Player
     uniqueID: 2263594409
     locked: 0
