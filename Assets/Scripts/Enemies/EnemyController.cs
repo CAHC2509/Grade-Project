@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     [SerializeField] private NavMeshAgent meshAgent;
     [SerializeField] private Animator enemyAnimator;
     [SerializeField] private EnemyStateMachine stateMachine;
+    [SerializeField] private HealthBar healthBar;
 
     [Space, Header("Distance attack settings")]
     [SerializeField] private Projectile projectilePrefab;
@@ -26,6 +27,8 @@ public class EnemyController : MonoBehaviour, IDamageable
         navMeshAgent.speed = originalEnemyData.speed;
 
         enemyData = originalEnemyData.GetCopy();
+
+        healthBar.InitializeHealthBar(enemyData.maxHealth, enemyData.health);
     }
 
     public void CheckFacing()
@@ -48,9 +51,11 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     public void TakeDamage(float damageAmount)
     {
-        enemyData.life -= damageAmount;
+        enemyData.health -= damageAmount;
 
-        if (enemyData.life <= 0f)
+        healthBar.UpdateHealthBar(enemyData.health);
+
+        if (enemyData.health <= 0f)
             stateMachine.SwithState(stateMachine.deathState);
     }
 
@@ -82,7 +87,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     }
 
 
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
         // Draw attack range and vision range
         Gizmos.color = Color.yellow;
@@ -95,5 +100,5 @@ public class EnemyController : MonoBehaviour, IDamageable
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + (direction1 * enemyData.rangeAttackDistance));
         Gizmos.DrawLine(transform.position, transform.position + (direction2 * enemyData.rangeAttackDistance));
-    }
+    }*/
 }

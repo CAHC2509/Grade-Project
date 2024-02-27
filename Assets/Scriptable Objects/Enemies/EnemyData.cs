@@ -13,7 +13,8 @@ public class EnemyData : ScriptableObject
 
     [Header("Base stats")]
     public AttackType attackType;
-    public float life = 100f;
+    public float maxHealth = 100f;
+    public float health = 100f;
     public float speed = 5f;
 
     [Space, Header("Attack stats")]
@@ -25,7 +26,8 @@ public class EnemyData : ScriptableObject
     {
         EnemyData copy = CreateInstance<EnemyData>();
         copy.attackType = attackType;
-        copy.life = life;
+        copy.maxHealth = maxHealth;
+        copy.health = health;
         copy.speed = speed;
         copy.rangeAttackDistance = rangeAttackDistance;
         copy.meleeAttackDistance = meleeAttackDistance;
