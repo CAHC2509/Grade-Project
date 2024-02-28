@@ -16,6 +16,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private Transform firePoint;
 
+    [HideInInspector]
     public EnemyData enemyData;
     public NavMeshAgent navMeshAgent => meshAgent;
     public Animator animator => enemyAnimator;
@@ -87,7 +88,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     }
 
 
-    /*private void OnDrawGizmos()
+    private void OnDrawGizmos()
     {
         // Draw attack range and vision range
         Gizmos.color = Color.yellow;
@@ -100,5 +101,5 @@ public class EnemyController : MonoBehaviour, IDamageable
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + (direction1 * enemyData.rangeAttackDistance));
         Gizmos.DrawLine(transform.position, transform.position + (direction2 * enemyData.rangeAttackDistance));
-    }*/
+    }
 }
