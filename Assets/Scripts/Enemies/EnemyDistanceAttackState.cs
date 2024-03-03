@@ -14,23 +14,12 @@ public class EnemyDistanceAttackState : EnemyBaseState
         Vector3 enemyPosition = enemyController.transform.position;
         float distanceToPlayer = Vector3.Distance(enemyPosition, playerPosition);
 
-        AnimatorStateInfo stateInfo = enemyController.animator.GetCurrentAnimatorStateInfo(0);
-
         bool playerIsInAttackRange = distanceToPlayer < enemyController.enemyData.rangeAttackDistance;
         bool playerIsInFOV = enemyController.IsPlayerInFieldOfVision();
-        bool isPlayingShootAnimation = stateInfo.IsName(Animations.Enemy.Shoot);
 
-        if (isPlayingShootAnimation)
-        {
-            if (stateInfo.normalizedTime >= 1.0f)
-                stateMachine.SwithState(stateMachine.chaseState);
-        }
+        if (playerIsInAttackRange && playerIsInFOV)
+            enemyController.animator.CrossFade(Animations.Enemy.Shoot, 0f);
         else
-        {
-            if (playerIsInAttackRange && playerIsInFOV)
-                enemyController.animator.CrossFade(Animations.Enemy.Shoot, 0f);
-            else
-                stateMachine.SwithState(stateMachine.chaseState);
-        }
+            stateMachine.SwithState(stateMachine.chaseState);
     }
 }
