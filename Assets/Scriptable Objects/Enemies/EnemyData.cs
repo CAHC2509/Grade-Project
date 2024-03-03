@@ -21,6 +21,7 @@ public class EnemyData : ScriptableObject
     public float rangeAttackDistance = 5f;
     public float meleeAttackDistance = 1.5f;
     public float fieldOfViewAngle = 25f;
+    public float fieldOfViewTolerancy = 0.35f;
 
     public EnemyData GetCopy()
     {
@@ -32,6 +33,7 @@ public class EnemyData : ScriptableObject
         copy.rangeAttackDistance = rangeAttackDistance;
         copy.meleeAttackDistance = meleeAttackDistance;
         copy.fieldOfViewAngle = fieldOfViewAngle;
+        copy.fieldOfViewTolerancy = fieldOfViewTolerancy;
 
         return copy;
     }

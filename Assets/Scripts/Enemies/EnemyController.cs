@@ -62,19 +62,11 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     public bool IsPlayerInFieldOfVision()
     {
-        Vector3 center = GetPlayerCenter();
-        Vector2 directionToPlayer = center - transform.position;
+        Vector3 playerDirection = GetPlayerCenter() - transform.position;
 
-        float angleToPlayer = Vector2.Angle(firePoint.up, directionToPlayer);
-        float crossProduct = Vector3.Cross(firePoint.up, directionToPlayer).z;
+        float angleToPlayer = Vector3.Angle(transform.right, playerDirection);
 
-        if (crossProduct < 0)
-            angleToPlayer = 360 - angleToPlayer;
-
-        if (angleToPlayer <= enemyData.fieldOfViewAngle * 0.5f && directionToPlayer.magnitude <= enemyData.rangeAttackDistance)
-            return true;
-
-        return false;
+        return angleToPlayer < enemyData.fieldOfViewAngle * enemyData.fieldOfViewTolerancy;
     }
 
     private Vector3 GetPlayerCenter()

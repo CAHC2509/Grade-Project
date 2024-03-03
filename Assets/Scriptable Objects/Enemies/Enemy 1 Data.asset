@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Enemy 1 Data
   m_EditorClassIdentifier: 
   attackType: 1
-  life: 100
+  maxHealth: 100
+  health: 100
   speed: 4
   rangeAttackDistance: 6
   meleeAttackDistance: 2.5
-  fieldOfViewAngle: 60
+  fieldOfViewAngle: 90
+  fieldOfViewTolerancy: 0.3

@@ -17,6 +17,8 @@ public class EnemyChaseState : EnemyBaseState
         Vector3 enemyPosition = enemyController.transform.position;
         Vector3 targetPosition = CalculateLateralPosition(playerPosition, enemyPosition);
 
+        Debug.DrawLine(enemyPosition, targetPosition, Color.cyan);
+
         enemyController.navMeshAgent.SetDestination(targetPosition);
         enemyController.CheckFacing();
 
@@ -51,7 +53,7 @@ public class EnemyChaseState : EnemyBaseState
         Vector3 directionToPlayer = playerPosition - enemyPosition;
         directionToPlayer.y = 0f;
         Vector3 lateralDirection = Vector3.Cross(directionToPlayer.normalized, Vector3.up);
-        float lateralDistance = 2.5f;
+        float lateralDistance = 5f;
 
         return playerPosition + lateralDirection * lateralDistance;
     }
