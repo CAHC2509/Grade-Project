@@ -23,6 +23,9 @@ public class EnemyData : ScriptableObject
     public float fieldOfViewAngle = 25f;
     public float fieldOfViewTolerancy = 0.35f;
 
+    [Space, Header("Projectiles explossion stats")]
+    public int projectilesAmount = 6;
+
     public EnemyData GetCopy()
     {
         EnemyData copy = CreateInstance<EnemyData>();
@@ -34,6 +37,7 @@ public class EnemyData : ScriptableObject
         copy.meleeAttackDistance = meleeAttackDistance;
         copy.fieldOfViewAngle = fieldOfViewAngle;
         copy.fieldOfViewTolerancy = fieldOfViewTolerancy;
+        copy.projectilesAmount = projectilesAmount;
 
         return copy;
     }

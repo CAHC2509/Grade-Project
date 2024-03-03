@@ -19,3 +19,5 @@ MonoBehaviour:
   rangeAttackDistance: 7.5
   meleeAttackDistance: 2.5
   fieldOfViewAngle: 360
+  fieldOfViewTolerancy: 1
+  projectilesAmount: 6

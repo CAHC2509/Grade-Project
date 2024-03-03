@@ -50,6 +50,29 @@ public class EnemyController : MonoBehaviour, IDamageable
         projectileController?.ApplyBulletSpeed(firePoint.up);
     }
 
+    public void ProjectilesExplosion()
+    {
+        int numProjectiles = enemyData.projectilesAmount;
+        float explosionRadius = 0.5f;
+
+        for (int i = 0; i < numProjectiles; i++)
+        {
+            float angle = (360f / numProjectiles) * i;
+            float radians = Mathf.Deg2Rad * angle;
+
+            float x = explosionRadius * Mathf.Cos(radians);
+            float y = explosionRadius * Mathf.Sin(radians);
+
+            GameObject instantiatedProjectile = ObjectPool.Instance.GetPooledObject(ObjectPool.ObjectType.GREEN_PROJECTILE);
+            instantiatedProjectile.transform.position = firePoint.transform.position + new Vector3(x, y, 0f);
+            instantiatedProjectile?.SetActive(true);
+
+            Projectile projectileController = instantiatedProjectile.GetComponent<Projectile>();
+            projectileController?.ApplyBulletSpeed(new Vector2(x, y).normalized);
+        }
+    }
+
+
     public void TakeDamage(float damageAmount)
     {
         enemyData.health -= damageAmount;
