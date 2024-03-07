@@ -19,4 +19,10 @@ public static class Animations
         public static readonly string Shoot = "Shoot";
         public static readonly string Death = "Death";
     }
+    public static class Turret
+    {
+        public static readonly string Idle = "Idle";
+        public static readonly string Shoot = "Shoot";
+        public static readonly string Death = "Death";
+    }
 }

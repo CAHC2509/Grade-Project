@@ -20,8 +20,8 @@ public class EnemyData : ScriptableObject
     [Space, Header("Attack stats")]
     public float rangeAttackDistance = 5f;
     public float meleeAttackDistance = 1.5f;
-    public float fieldOfViewAngle = 25f;
-    public float fieldOfViewTolerancy = 0.35f;
+    public float fieldOfViewAngle = 90f;
+    public float fieldOfViewTolerancy = 0.3f;
 
     [Space, Header("Projectiles explossion stats")]
     public int projectilesAmount = 6;
