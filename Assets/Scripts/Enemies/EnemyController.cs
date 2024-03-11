@@ -92,6 +92,19 @@ public class EnemyController : MonoBehaviour, IDamageable
         return angleToPlayer < enemyData.fieldOfViewAngle * enemyData.fieldOfViewTolerancy;
     }
 
+    public bool LineOfSightClear()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(firePoint.position, firePoint.up, enemyData.rangeAttackDistance);
+
+        if (hit.collider != null)
+        {
+            if (hit.collider.CompareTag(Tags.Enviroment))
+                return false;
+        }
+
+        return true;
+    }
+
     private Vector3 GetPlayerCenter()
     {
         Transform player = PlayerMovement.Instance.transform;

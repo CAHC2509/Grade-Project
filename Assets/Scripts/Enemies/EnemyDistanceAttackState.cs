@@ -16,8 +16,11 @@ public class EnemyDistanceAttackState : EnemyBaseState
 
         bool playerIsInAttackRange = distanceToPlayer < enemyController.enemyData.rangeAttackDistance;
         bool playerIsInFOV = enemyController.IsPlayerInFieldOfVision();
+        bool lineOfSightClear = enemyController.LineOfSightClear();
 
-        if (playerIsInAttackRange && playerIsInFOV)
+        bool canShoot = playerIsInAttackRange && playerIsInFOV && lineOfSightClear;
+
+        if (canShoot)
             enemyController.animator.CrossFade(Animations.Enemy.Shoot, 0f);
         else
             stateMachine.SwithState(stateMachine.chaseState);
