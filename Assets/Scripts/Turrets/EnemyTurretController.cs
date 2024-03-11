@@ -20,7 +20,7 @@ public class EnemyTurretController : MonoBehaviour, IDamageable
 
     public void LaunchProjectile()
     {
-        GameObject instanciatedProjectile = ObjectPool.Instance.GetPooledObject(ObjectPool.ObjectType.GREEN_PROJECTILE);
+        GameObject instanciatedProjectile = ObjectPool.Instance.GetPooledObject(ObjectPool.ObjectType.OVAL_PROJECTILE);
         instanciatedProjectile.transform.position = firePoint.transform.position;
         instanciatedProjectile?.SetActive(true);
 
