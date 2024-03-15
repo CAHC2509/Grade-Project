@@ -8,9 +8,11 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] private Projectile blueProjectilePrefab;
     [SerializeField] private Projectile greenProjectilePrefab;
     [SerializeField] private Projectile ovalProjectilePrefab;
+    [SerializeField] private Projectile greenLaserPrefab;
     [SerializeField] private int blueProjectilesAmount;
     [SerializeField] private int greenProjectilesAmount;
     [SerializeField] private int ovalProjectilesAmount;
+    [SerializeField] private int greenLasersAmount;
     [SerializeField] private Transform projectilesParent;
 
     [Space, Header("Projectiles particles")]
@@ -21,6 +23,7 @@ public class ObjectPool : MonoBehaviour
     private List<GameObject> blueProjectilesPool = new List<GameObject>();
     private List<GameObject> greenProjectilesPool = new List<GameObject>();
     private List<GameObject> ovalProjectilesPool = new List<GameObject>();
+    private List<GameObject> greenLasersPool = new List<GameObject>();
     private List<GameObject> greenParticlesPool = new List<GameObject>();
     private List<GameObject> blueParticlesPool = new List<GameObject>();
 
@@ -30,6 +33,7 @@ public class ObjectPool : MonoBehaviour
         BLUE_PROJECTILE,
         GREEN_PROJECTILE,
         OVAL_PROJECTILE,
+        GREEN_LASER,
         BLUE_PARTICLES,
         GREEN_PARTICLES
     }
@@ -43,6 +47,7 @@ public class ObjectPool : MonoBehaviour
         CreatePool(blueProjectilePrefab.gameObject, blueProjectilesAmount, projectilesParent, blueProjectilesPool);
         CreatePool(greenProjectilePrefab.gameObject, greenProjectilesAmount, projectilesParent, greenProjectilesPool);
         CreatePool(ovalProjectilePrefab.gameObject, ovalProjectilesAmount, projectilesParent, ovalProjectilesPool);
+        CreatePool(greenLaserPrefab.gameObject, greenLasersAmount, projectilesParent, greenLasersPool);
         CreatePool(greenParticlesPrefab, blueProjectilesAmount, projectilesParticlesParent, greenParticlesPool);
         CreatePool(blueParticlesPrefab, blueProjectilesAmount, projectilesParticlesParent, blueParticlesPool);
     }
@@ -73,6 +78,10 @@ public class ObjectPool : MonoBehaviour
             
             case ObjectType.OVAL_PROJECTILE:
                 targetPool = ovalProjectilesPool;
+                break;
+            
+            case ObjectType.GREEN_LASER:
+                targetPool = greenLasersPool;
                 break;
 
             case ObjectType.BLUE_PARTICLES:

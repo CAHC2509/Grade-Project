@@ -50,6 +50,16 @@ public class EnemyController : MonoBehaviour, IDamageable
         projectileController?.ApplyBulletSpeed(firePoint.up);
     }
 
+    public void LaunchLaser()
+    {
+        GameObject instanciatedProjectile = ObjectPool.Instance.GetPooledObject(ObjectPool.ObjectType.GREEN_LASER);
+        instanciatedProjectile.transform.position = firePoint.transform.position;
+        instanciatedProjectile?.SetActive(true);
+
+        Projectile projectileController = instanciatedProjectile.GetComponent<Projectile>();
+        projectileController?.ApplyBulletSpeed(firePoint.up);
+    }
+
     public void ProjectilesExplosion()
     {
         int numProjectiles = enemyData.projectilesAmount;
@@ -87,7 +97,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         Vector3 playerDirection = GetPlayerCenter() - transform.position;
 
-        float angleToPlayer = Vector3.Angle(transform.right, playerDirection);
+        float angleToPlayer = Vector3.Angle(firePoint.up, playerDirection);
 
         return angleToPlayer < enemyData.fieldOfViewAngle * enemyData.fieldOfViewTolerancy;
     }
