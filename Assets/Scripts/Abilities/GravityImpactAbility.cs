@@ -6,10 +6,13 @@ public class GravityImpactAbility : Ability
 {
     public float impactForce;
     public float impactDamage;
-    public float explosionRadius;
+    [Range(0f, 10f)] public float explosionRadius;
 
     public override void Activate(GameObject parent)
     {
+        ShockwaveController.Instance.CallShockwave();
+        CameraShakeController.Instance.Shake(impactForce * 2f);
+
         Collider2D[] colliders = Physics2D.OverlapCircleAll(parent.transform.position, explosionRadius);
 
         foreach (Collider2D collider in colliders)

@@ -58,3 +58,6 @@ TagManager:
   - name: Player
     uniqueID: 2263594409
     locked: 0
+  - name: Shockwave
+    uniqueID: 429251755
+    locked: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityName: Gravity Impact
   cooldownTime: 3
-  activeTime: 0.25
+  activeTime: 0.125
   impactForce: 40
   impactDamage: 70
   explosionRadius: 5
