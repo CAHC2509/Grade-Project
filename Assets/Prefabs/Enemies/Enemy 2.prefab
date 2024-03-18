@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 218192521116071075}
   - component: {fileID: 4993089522019881725}
   - component: {fileID: 135831325898366316}
+  - component: {fileID: 8639814805571304653}
   - component: {fileID: 1512937444136820558}
   m_Layer: 7
   m_Name: Enemy 2
@@ -358,6 +359,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 4861281555477977334}
   stateMachine: {fileID: 135831325898366316}
   healthBar: {fileID: 218192521116071075}
+  flashEffect: {fileID: 8639814805571304653}
   projectilePrefab: {fileID: 1871152266651697960, guid: 6b3b90f94ac247c4fbcba533ad4be6da, type: 3}
   firePoint: {fileID: 5420455186265761411}
   enemyData: {fileID: 11400000, guid: b0d13d895ca7ae94daf8a862dfd44b40, type: 2}
@@ -374,6 +376,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyController: {fileID: 4993089522019881725}
+--- !u!114 &8639814805571304653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4960332681347637101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c707bc07e48fe543858cb3e16753d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: e70360fbbbe6e1e43add55fe95f5db75, type: 2}
+  spriteRenderer: {fileID: 8479327422328660338}
+  flashDuration: 0.15
 --- !u!114 &1512937444136820558
 MonoBehaviour:
   m_ObjectHideFlags: 0

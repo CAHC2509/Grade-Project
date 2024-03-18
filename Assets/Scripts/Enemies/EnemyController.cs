@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     [SerializeField] private Animator enemyAnimator;
     [SerializeField] private EnemyStateMachine stateMachine;
     [SerializeField] private HealthBar healthBar;
+    [SerializeField] private FlashEffect flashEffect;
 
     [Space, Header("Distance attack settings")]
     [SerializeField] private Projectile projectilePrefab;
@@ -85,6 +86,8 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     public void TakeDamage(float damageAmount)
     {
+        flashEffect.SingleFlash();
+
         enemyData.health -= damageAmount;
 
         healthBar.UpdateHealthBar(enemyData.health);

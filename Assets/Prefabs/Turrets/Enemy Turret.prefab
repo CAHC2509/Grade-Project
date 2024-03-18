@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8618801894033077388}
   - component: {fileID: 1641743387880312433}
   - component: {fileID: 2336298816966531504}
+  - component: {fileID: 4816783866526951817}
   - component: {fileID: 128511997785429749}
   m_Layer: 7
   m_Name: Enemy Turret
@@ -173,6 +174,7 @@ MonoBehaviour:
   stateMachine: {fileID: 2336298816966531504}
   turretAnimator: {fileID: 7948690200451244978}
   pointOfFire: {fileID: 6562596179189638173}
+  flashEffect: {fileID: 4816783866526951817}
   turretData: {fileID: 0}
 --- !u!114 &2336298816966531504
 MonoBehaviour:
@@ -187,6 +189,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretController: {fileID: 1641743387880312433}
+--- !u!114 &4816783866526951817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5184015732397480341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c707bc07e48fe543858cb3e16753d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: e70360fbbbe6e1e43add55fe95f5db75, type: 2}
+  spriteRenderer: {fileID: 4959612488079730297}
+  flashDuration: 0.15
 --- !u!114 &128511997785429749
 MonoBehaviour:
   m_ObjectHideFlags: 0

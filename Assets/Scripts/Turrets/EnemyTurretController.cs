@@ -9,6 +9,7 @@ public class EnemyTurretController : MonoBehaviour, IDamageable
     [SerializeField] private TurretStateMachine stateMachine;
     [SerializeField] private Animator turretAnimator;
     [SerializeField] private Transform pointOfFire;
+    [SerializeField] private FlashEffect flashEffect;
 
     [HideInInspector]
     public TurretData turretData;
@@ -43,6 +44,8 @@ public class EnemyTurretController : MonoBehaviour, IDamageable
 
     public void TakeDamage(float damageAmount)
     {
+        flashEffect.SingleFlash();
+
         turretData.health -= damageAmount;
 
         if (turretData.health <= 0f)
