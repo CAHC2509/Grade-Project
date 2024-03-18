@@ -87,6 +87,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     public void TakeDamage(float damageAmount)
     {
         flashEffect.SingleFlash();
+        CameraShakeController.Instance.Shake(15f, 0.25f);
 
         enemyData.health -= damageAmount;
 

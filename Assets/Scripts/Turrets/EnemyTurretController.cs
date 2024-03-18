@@ -45,6 +45,7 @@ public class EnemyTurretController : MonoBehaviour, IDamageable
     public void TakeDamage(float damageAmount)
     {
         flashEffect.SingleFlash();
+        CameraShakeController.Instance.Shake(10f, 0.25f);
 
         turretData.health -= damageAmount;
 

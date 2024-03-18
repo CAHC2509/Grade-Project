@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
         GREEN
     }
 
-    private void Start() => Invoke(nameof(DisableProjectile), bulletData.lifeTime);
+    private void OnEnable() => Invoke(nameof(DisableProjectile), bulletData.lifeTime);
 
     public void ApplyBulletSpeed(Vector2 direction)
     {
@@ -45,4 +45,6 @@ public class Projectile : MonoBehaviour
         pooledParticle.SetActive(true);
         gameObject.SetActive(false);
     }
+
+    private void OnDisable() => CancelInvoke(nameof(DisableProjectile));
 }
