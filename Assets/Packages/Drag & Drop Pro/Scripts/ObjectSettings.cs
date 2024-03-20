@@ -36,7 +36,8 @@ public class ObjectSettings : MonoBehaviour {
 	Vector2 mouseDifference;
 
 	// Customization Tools
-	public string Id; 	// the Id of this object
+	public string Id;   // the Id of this object
+	public GameObject correctSprite;
 
 	[Tooltip ("Allow user to control this object")]
 	public bool UserControl = true;
@@ -108,7 +109,9 @@ public class ObjectSettings : MonoBehaviour {
 		DDM = FindObjectOfType<DragDropManager>();
 	}
 
-	void Update () {
+	void Start() => correctSprite.SetActive(false);
+
+    void Update () {
 		if (PDown)
 		{
 			Vector3 MousePos = GetMousePos();
@@ -272,8 +275,8 @@ public class ObjectSettings : MonoBehaviour {
 	}
 
 	void PanelDropTools (int i) {
-		if (DDM.AllPanels [i].ObjectId != "" && DDM.AllPanels[i].ObjectId != Id) {
-			if (DragDropManager.GetObjectById(DDM.AllPanels[i].ObjectId).OnReturning)
+		if (DDM.AllPanels [i].placedObjectId != "" && DDM.AllPanels[i].placedObjectId != Id) {
+			if (DragDropManager.GetObjectById(DDM.AllPanels[i].placedObjectId).OnReturning)
 			{
 				return;
 			}
@@ -307,10 +310,10 @@ public class ObjectSettings : MonoBehaviour {
 		}
 
 		// Check if there is another object on target panel
-		if (DDM.AllPanels[i].ObjectId != "" && DDM.AllPanels[i].ObjectId != Id) {
+		if (DDM.AllPanels[i].placedObjectId != "" && DDM.AllPanels[i].placedObjectId != Id) {
 			if (DDM.AllPanels [i].ObjectReplacement == PanelSettings.ObjectReplace.Allowed) {
 				// Check if objects should not switch between their panels. So this object will replace with second object
-				if (!SwitchObjects && !DefaultPanel && !DragDropManager.GetObjectById(DDM.AllPanels[i].ObjectId).DefaultPanel) {
+				if (!SwitchObjects && !DefaultPanel && !DragDropManager.GetObjectById(DDM.AllPanels[i].placedObjectId).DefaultPanel) {
 					ObjectsReplacement (i);
 				} else {
 					// Objects will switch between their panels (if this object was on any panel)
@@ -343,7 +346,7 @@ public class ObjectSettings : MonoBehaviour {
 		// Setup ScaleOnDropped tool
 		ScaleOnDroppedTool ();
 
-		if ((!SwitchObjects && !DefaultPanel) || DDM.AllPanels[i].ObjectId == "") {
+		if ((!SwitchObjects && !DefaultPanel) || DDM.AllPanels[i].placedObjectId == "") {
 			SetPrevPanelId (index);
 		}
 		
@@ -372,7 +375,7 @@ public class ObjectSettings : MonoBehaviour {
 
 	void ObjectsReplacement (int i) {
 		for (int j = 0; j < DDM.AllObjects.Count; j++) {
-			if (DDM.AllPanels[i].ObjectId == DDM.AllObjects [j].Id && DDM.AllObjects [j].Dropped) {
+			if (DDM.AllPanels[i].placedObjectId == DDM.AllObjects [j].Id && DDM.AllObjects [j].Dropped) {
 				DDM.AllObjects [j].Dropped = false;
 				DDM.AllObjects [j].GetComponent <RectTransform> ().localScale = DDM.AllObjects [j].FirstScale;
 				if (!ReplaceSmoothly) {
@@ -397,7 +400,7 @@ public class ObjectSettings : MonoBehaviour {
 		if (index != -1)
 		{
 			for (int j = 0; j < DDM.AllObjects.Count; j++) {
-				if (DDM.AllPanels[i].ObjectId == DDM.AllObjects [j].Id) {
+				if (DDM.AllPanels[i].placedObjectId == DDM.AllObjects [j].Id) {
 					if (DDM.AllPanels [index].ObjectReplacement == PanelSettings.ObjectReplace.MultiObjectMode) {
 						// Setup Multi Object tool
 						DDM.AllPanels [index].RemoveMultiObject (Id);

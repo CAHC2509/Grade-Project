@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 public class PanelSettings : MonoBehaviour
 {
-	[HideInInspector]
-	public string ObjectId = "";
+	public string spectedObjectId = "Unassigned";
+	public string placedObjectId = "";
 
 	// Enums
 	public enum ObjectPosStates { UseObjectSettings, DroppedPosition, PanelPosition };

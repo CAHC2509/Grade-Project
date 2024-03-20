@@ -109,6 +109,7 @@ MonoBehaviour:
   Dropped: 0
   OnReturning: 0
   Id: Obj1
+  correctSprite: {fileID: 9218491371775336592}
   UserControl: 1
   ReturnSmoothly: 1
   ReturnSpeed: 1
@@ -230,7 +231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8250729121665680105
 RectTransform:
   m_ObjectHideFlags: 0

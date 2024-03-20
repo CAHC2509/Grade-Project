@@ -141,7 +141,7 @@ public class DragDropManager : MonoBehaviour {
 	}
 
 	public void SetPanelObject (int PanelIndex, string ObjectId) {
-		AllPanels [PanelIndex].ObjectId = ObjectId;
+		AllPanels [PanelIndex].placedObjectId = ObjectId;
 	}
 
 	public static void ResetScene()
@@ -163,7 +163,7 @@ public class DragDropManager : MonoBehaviour {
 		// Reset Panels
 		for (int i = 0; i < DDM.AllPanels.Count; i++)
 		{
-			DDM.AllPanels[i].ObjectId = "";
+			DDM.AllPanels[i].placedObjectId = "";
 			if (DDM.AllPanels[i].ObjectReplacement == PanelSettings.ObjectReplace.MultiObjectMode)
 			{
 				DDM.AllPanels[i].PanelIdManager.Clear();
@@ -179,14 +179,14 @@ public class DragDropManager : MonoBehaviour {
 	{
 		for (int i = 0; i < AllPanels.Count; i++)
 		{
-			if (AllPanels[i].ObjectId == objId)
+			if (AllPanels[i].placedObjectId == objId)
 				return i;
 		}
 		return -1;
 	}
 
 	public static string GetPanelObjectId (string PanelId) {
-		return GetPanelById(PanelId).ObjectId;
+		return GetPanelById(PanelId).placedObjectId;
 	}
 
 	public static string[] GetPanelObjectsIds (string PanelId) {
@@ -208,7 +208,7 @@ public class DragDropManager : MonoBehaviour {
 		{
 			if (DDM.AllPanels[i].ObjectReplacement != PanelSettings.ObjectReplace.MultiObjectMode)
 			{
-				if (ObjectId == DDM.AllPanels[i].ObjectId)
+				if (ObjectId == DDM.AllPanels[i].placedObjectId)
 				{
 					IdStatus = DDM.AllPanels[i].Id;
 				}
@@ -275,13 +275,13 @@ public class DragDropManager : MonoBehaviour {
             {
 				if (DDM.AllPanels[i].Id == panelId)
                 {
-					if (DDM.AllPanels[i].ObjectId == obj.Id)
-						DDM.AllPanels[i].ObjectId = "";
+					if (DDM.AllPanels[i].placedObjectId == obj.Id)
+						DDM.AllPanels[i].placedObjectId = "";
 					if (DDM.AllPanels[i].ObjectReplacement == PanelSettings.ObjectReplace.MultiObjectMode)
                     {
 						DDM.AllPanels[i].PanelIdManager.Remove(obj.Id);
 						if (DDM.AllPanels[i].PanelIdManager.Count > 0)
-							DDM.AllPanels[i].ObjectId = DDM.AllPanels[i].PanelIdManager[DDM.AllPanels[i].PanelIdManager.Count - 1];
+							DDM.AllPanels[i].placedObjectId = DDM.AllPanels[i].PanelIdManager[DDM.AllPanels[i].PanelIdManager.Count - 1];
 						if (DDM.SaveStates)
                         {
 							DDM.AllPanels[i].SaveObjectsList();
