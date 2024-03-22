@@ -16,7 +16,13 @@ public class Projectile : MonoBehaviour
         GREEN
     }
 
-    private void OnEnable() => Invoke(nameof(DisableProjectile), bulletData.lifeTime);
+    private void OnEnable()
+    {
+        if (CompareTag(Tags.EnemyProjectile))
+            gameObject.layer = Layers.Enemy;
+
+        Invoke(nameof(DisableProjectile), bulletData.lifeTime);
+    }
 
     public void ApplyBulletSpeed(Vector2 direction)
     {
