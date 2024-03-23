@@ -19,7 +19,7 @@ public class Projectile : MonoBehaviour
     private void OnEnable()
     {
         if (CompareTag(Tags.EnemyProjectile))
-            gameObject.layer = Layers.Enemy;
+            gameObject.layer = Layers.EnemyProjectiles;
 
         Invoke(nameof(DisableProjectile), bulletData.lifeTime);
     }

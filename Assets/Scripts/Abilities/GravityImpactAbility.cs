@@ -34,7 +34,7 @@ public class GravityImpactAbility : Ability
                 damageable.TakeDamage(impactDamage);
 
             if (collider.gameObject.CompareTag(Tags.EnemyProjectile))
-                collider.gameObject.layer = Layers.Player;
+                collider.gameObject.layer = Layers.PlayerProjectiles;
         }
     }
 }

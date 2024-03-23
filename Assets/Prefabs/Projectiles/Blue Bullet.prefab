@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1379013358468069346}
   - component: {fileID: 8434990717304334993}
   - component: {fileID: 42906010619612535}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Blue Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

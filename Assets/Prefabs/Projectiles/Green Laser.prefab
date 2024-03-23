@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 965313739169271339}
   - component: {fileID: 4959083456270547125}
   - component: {fileID: 2890082247791639811}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Green Laser
   m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
