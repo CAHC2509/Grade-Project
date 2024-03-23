@@ -17,7 +17,7 @@ public class QuestController : MonoBehaviour
         }
     }
 
-    public bool AllObjectsPlacedCorrectly()
+    private bool AllObjectsPlacedCorrectly()
     {
         List<PanelSettings> panels = dragDropManager.AllPanels;
         foreach (PanelSettings panel in panels)
@@ -28,4 +28,6 @@ public class QuestController : MonoBehaviour
 
         return true;
     }
+
+    public void ResetQuest() => DragDropManager.ResetPositions(dragDropManager);
 }

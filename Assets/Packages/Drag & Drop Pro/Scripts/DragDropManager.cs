@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -144,7 +144,7 @@ public class DragDropManager : MonoBehaviour {
 		AllPanels [PanelIndex].placedObjectId = ObjectId;
 	}
 
-	public static void ResetScene()
+	public static void ResetPositions(DragDropManager DDM)
 	{
 		// Reset Objects
 		for (int i = 0; i < DDM.AllObjects.Count; i++)
