@@ -19,10 +19,19 @@ public static class Animations
         public static readonly string Shoot = "Shoot";
         public static readonly string Death = "Death";
     }
+
     public static class Turret
     {
         public static readonly string Idle = "Idle";
         public static readonly string Shoot = "Shoot";
         public static readonly string Death = "Death";
+    }
+
+    public static class Door
+    {
+        public static readonly string Lock = "Lock";
+        public static readonly string Unlock = "Unlock";
+        public static readonly string Open = "Open";
+        public static readonly string Close = "Close";
     }
 }
