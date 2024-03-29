@@ -14,9 +14,12 @@ public class TurretStateMachine : MonoBehaviour
 
     public EnemyTurretController controller => turretController;
 
-    private void Start() => SwithState(idleState);
+    private void Start() => SetIdleState();
 
     private void Update() => currentState.UpdateState(this);
+
+    [ContextMenu("Set idle state")]
+    public void SetIdleState() => SwithState(idleState);
 
     public void SwithState(TurretBaseState state)
     {
