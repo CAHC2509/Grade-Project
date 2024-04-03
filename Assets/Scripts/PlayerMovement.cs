@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PlayerData originalPlayerData;
     [SerializeField] private Rigidbody2D playerRB;
     [SerializeField] private Animator playerAnimator;
+    [SerializeField] private ParticleSystem dashFX;
     [SerializeField] private InputActionReference verticalInputAction;
     [SerializeField] private InputActionReference horizontalInputAction;
     [SerializeField] private InputActionReference shootInputAction;
@@ -59,6 +60,9 @@ public class PlayerMovement : MonoBehaviour
         {
             float angle = Mathf.Atan2(0f, movementInput.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.up);
+
+            float scaleX = Mathf.Sign(movementInput.x);
+            dashFX.transform.localScale = new Vector3(scaleX, dashFX.transform.localScale.y, dashFX.transform.localScale.z);
         }
     }
 
@@ -80,6 +84,8 @@ public class PlayerMovement : MonoBehaviour
                 playerAnimator.CrossFade(Animations.Player.Idle, 0f, 0);
         }
     }
+
+    public void PlayDashFX() => dashFX.Play();
 
     private void OnDisable()
     {

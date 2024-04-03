@@ -14,6 +14,8 @@ public class Dash : Ability
         defaultSpeed = playerMovement.playerData.speed;
 
         playerMovement.playerData.speed = dashSpeed;
+
+        playerMovement.PlayDashFX();
     }
 
     public override void BeginCooldown(GameObject parent) => playerMovement.playerData.speed = defaultSpeed;
