@@ -1353,6 +1353,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (28)
@@ -1469,6 +1497,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -1700,6 +1756,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (15)
@@ -1817,6 +1901,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (4)
@@ -1933,6 +2045,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -2168,6 +2308,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (7)
@@ -2402,6 +2570,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (24)
@@ -2518,6 +2714,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -2636,6 +2860,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (21)
@@ -2752,6 +3004,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -3089,6 +3369,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (6)
@@ -3206,6 +3514,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (19)
@@ -3322,6 +3658,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -3552,6 +3916,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -3900,6 +4292,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (30)
@@ -4017,6 +4437,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (5)
@@ -4133,6 +4581,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -4368,6 +4844,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (20)
@@ -4484,6 +4988,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -4704,6 +5236,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (8)
@@ -4820,6 +5380,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -5266,6 +5854,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (18)
@@ -5382,6 +5998,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -5602,6 +6246,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (22)
@@ -5718,6 +6390,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -5948,6 +6648,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -6296,6 +7024,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (25)
@@ -6525,6 +7281,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
@@ -7103,6 +7887,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (12)
@@ -7567,6 +8379,34 @@ PrefabInstance:
       propertyPath: spectedObjectId
       value: Unassigned
       objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name
       value: Panel (27)
@@ -7683,6 +8523,34 @@ PrefabInstance:
     - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: spectedObjectId
       value: Unassigned
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2347619716474273208}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReviewQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137405913450967208, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
+      propertyPath: OnObjectDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9066454874127322738, guid: 316096aff28554f4dad1a0cc851efb92, type: 3}
       propertyPath: m_Name

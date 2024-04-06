@@ -16,6 +16,7 @@ public class DragDropManager : MonoBehaviour {
 	public static DragDropManager DDM;
 
 	// panels
+	public List<PanelSettings> CalificablePanels;
 	public List<PanelSettings> AllPanels;
 	// objects
 	public List<ObjectSettings> AllObjects;
