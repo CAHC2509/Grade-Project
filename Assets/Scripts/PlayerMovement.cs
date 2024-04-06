@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference verticalInputAction;
     [SerializeField] private InputActionReference horizontalInputAction;
     [SerializeField] private InputActionReference shootInputAction;
-    [SerializeField] private InputActionReference interactionInput;
     [HideInInspector] public PlayerData playerData;
 
     private Vector2 movementInput;
@@ -23,14 +22,6 @@ public class PlayerMovement : MonoBehaviour
     public static PlayerMovement Instance { get; private set; }
 
     private void Awake() => Instance = this;
-
-    private void OnEnable()
-    {
-        verticalInputAction.action.Enable();
-        horizontalInputAction.action.Enable();
-        shootInputAction.action.Enable();
-        interactionInput.action.Enable();
-    }
 
     private void Start() => playerData = originalPlayerData.GetCopy();
 
@@ -88,12 +79,4 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void PlayDashFX() => dashFX.Play();
-
-    private void OnDisable()
-    {
-        verticalInputAction.action.Disable();
-        horizontalInputAction.action.Disable();
-        shootInputAction.action.Disable();
-        interactionInput.action.Disable();
-    }
 }

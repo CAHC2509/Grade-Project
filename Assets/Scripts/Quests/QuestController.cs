@@ -7,7 +7,10 @@ public class QuestController : MonoBehaviour
     [SerializeField] private DragDropManager dragDropManager;
     [SerializeField] private UnityEvent onQuestCompleted;
 
-    [ContextMenu("Review")]
+    private void OnEnable() => InputActionsManager.Instance.DisableInteractions();
+
+    private void OnDisable() => InputActionsManager.Instance.EnableInteractions();
+
     public void ReviewQuest()
     {
         if (AllObjectsPlacedCorrectly())

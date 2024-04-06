@@ -13,8 +13,6 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private InputActionReference shootInputAction;
 
-    private void OnEnable() => shootInputAction.action.Enable();
-
     private void Start() => SetFireRate();
 
     private void Update()
@@ -34,6 +32,4 @@ public class PlayerShooting : MonoBehaviour
     }
 
     public void SetFireRate() => playerAnimator.SetFloat(Animations.Player.Parameters.ShootingSpeedMultiplier, playerData.fireRate);
-
-    private void OnDisable() => shootInputAction.action.Disable();
 }
