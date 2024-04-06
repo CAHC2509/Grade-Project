@@ -13,9 +13,10 @@ public class ComputerController : MonoBehaviour
     [SerializeField] private UnityEvent onPlayerInteraction;
     [SerializeField] private UnityEvent onQuestCompleted;
 
+    private float onQuestCompletedDelay = 1f;
     private bool playerIsNear = false;
 
-    public void QuestCompleted() => onQuestCompleted?.Invoke();
+    public void QuestCompleted() => Invoke(nameof(CompleteQuest), onQuestCompletedDelay);
 
     private void Update()
     {
@@ -25,6 +26,8 @@ public class ComputerController : MonoBehaviour
                 onPlayerInteraction?.Invoke();
         }
     }
+
+    private void CompleteQuest() => onQuestCompleted?.Invoke();
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
