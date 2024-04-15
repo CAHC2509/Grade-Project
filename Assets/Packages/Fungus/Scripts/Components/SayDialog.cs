@@ -331,7 +331,7 @@ namespace Fungus
             {
                 if (characterImage != null)
                 {
-                    characterImage.gameObject.SetActive(false);
+                    //characterImage.gameObject.SetActive(false);
                 }
                 if (NameText != null)
                 {
@@ -400,7 +400,7 @@ namespace Fungus
             }
             else
             {
-                characterImage.gameObject.SetActive(false);
+                //characterImage.gameObject.SetActive(false);
 
                 if (startStoryTextWidth != 0)
                 {
