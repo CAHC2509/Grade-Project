@@ -83,7 +83,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
     }
 
-
     public void TakeDamage(float damageAmount)
     {
         flashEffect.SingleFlash();
