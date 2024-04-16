@@ -11,7 +11,6 @@ public class GravityImpactAbility : Ability
     public override void Activate(GameObject parent)
     {
         ShockwaveController.Instance.CallShockwave();
-        CameraShakeController.Instance.Shake(impactForce * 2f);
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(parent.transform.position, explosionRadius);
 
@@ -36,5 +35,7 @@ public class GravityImpactAbility : Ability
             if (collider.gameObject.CompareTag(Tags.EnemyProjectile))
                 collider.gameObject.layer = Layers.PlayerProjectiles;
         }
+
+        CameraShakeController.Instance.Shake(impactForce * 2.5f);
     }
 }
