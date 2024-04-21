@@ -17,6 +17,9 @@ public class EnemyController : MonoBehaviour, IDamageable
     [SerializeField] private Projectile projectilePrefab;
     [SerializeField] private Transform firePoint;
 
+    [Space, Header("Debug settings")]
+    [SerializeField] private bool showGizmos;
+
     [HideInInspector]
     public EnemyData enemyData;
     public NavMeshAgent navMeshAgent => meshAgent;
@@ -131,16 +134,18 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     private void OnDrawGizmos()
     {
-        // Draw attack range and vision range
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, enemyData.rangeAttackDistance);
+        if (showGizmos)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, enemyData.rangeAttackDistance);
 
-        float halfFOV = enemyData.fieldOfViewAngle * 0.5f;
-        Vector3 direction1 = Quaternion.AngleAxis(halfFOV, Vector3.forward) * firePoint.up;
-        Vector3 direction2 = Quaternion.AngleAxis(-halfFOV, Vector3.forward) * firePoint.up;
+            float halfFOV = enemyData.fieldOfViewAngle * 0.5f;
+            Vector3 direction1 = Quaternion.AngleAxis(halfFOV, Vector3.forward) * firePoint.up;
+            Vector3 direction2 = Quaternion.AngleAxis(-halfFOV, Vector3.forward) * firePoint.up;
 
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, transform.position + (direction1 * enemyData.rangeAttackDistance));
-        Gizmos.DrawLine(transform.position, transform.position + (direction2 * enemyData.rangeAttackDistance));
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(transform.position, transform.position + (direction1 * enemyData.rangeAttackDistance));
+            Gizmos.DrawLine(transform.position, transform.position + (direction2 * enemyData.rangeAttackDistance));
+        }
     }
 }
