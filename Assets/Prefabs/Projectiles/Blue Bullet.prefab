@@ -185,4 +185,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletData: {fileID: 11400000, guid: e1a08beb8eb52664aab66cbb18a91bcb, type: 2}
   bulletRB: {fileID: 8434990717304334993}
-  bulletColor: 0
+  bulletType: 0

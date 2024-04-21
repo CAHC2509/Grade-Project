@@ -7,14 +7,10 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] private ProjectileData bulletData;
     [SerializeField] private Rigidbody2D bulletRB;
-    [SerializeField] private BulletColor bulletColor;
+    [SerializeField] private BulletType bulletType;
 
+    private enum BulletType { BLUE, GREEN, MISSILE }
     private Vector2 bulletDiection;
-    private enum BulletColor
-    {
-        BLUE,
-        GREEN
-    }
 
     private void OnEnable()
     {
@@ -28,6 +24,11 @@ public class Projectile : MonoBehaviour
     {
         bulletDiection = direction;
         bulletRB.velocity = direction.normalized * bulletData.speed;
+
+        float localScaleX = Mathf.Abs(transform.localScale.x);
+        bool isGoingRight = bulletDiection.x > 0f;
+        localScaleX = isGoingRight ? localScaleX : -localScaleX;
+        transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
     }
 
     private void DisableProjectile() => gameObject.SetActive(false);
@@ -39,7 +40,23 @@ public class Projectile : MonoBehaviour
         if (damageable is IDamageable)
             damageable.TakeDamage(bulletData.damage);
 
-        ObjectPool.ObjectType objectType = bulletColor == BulletColor.BLUE ? ObjectPool.ObjectType.BLUE_PARTICLES : ObjectPool.ObjectType.GREEN_PARTICLES;
+        ObjectPool.ObjectType objectType = ObjectPool.ObjectType.NONE;
+
+        switch (bulletType)
+        {
+            case BulletType.BLUE:
+                objectType = ObjectPool.ObjectType.BLUE_PARTICLES;
+                break;
+
+            case BulletType.GREEN:
+                objectType = ObjectPool.ObjectType.GREEN_PARTICLES;
+                break;
+
+            case BulletType.MISSILE:
+                objectType = ObjectPool.ObjectType.MISSILE_PARTICLES;
+                break;
+        }
+
         GameObject pooledParticle = ObjectPool.Instance.GetPooledObject(objectType);
         pooledParticle.transform.position = transform.position;
 

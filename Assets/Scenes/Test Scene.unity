@@ -3653,7 +3653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1313457937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6543,13 +6543,16 @@ MonoBehaviour:
   greenProjectilePrefab: {fileID: 1871152266651697960, guid: 6b3b90f94ac247c4fbcba533ad4be6da, type: 3}
   ovalProjectilePrefab: {fileID: 5491401813520445403, guid: 693097baa1db6c4469de4231ba245aa1, type: 3}
   greenLaserPrefab: {fileID: 2890082247791639811, guid: ae9a2b12cbbf6164ea01da54fb35c050, type: 3}
+  missilePrefab: {fileID: 4868485863264295173, guid: 245ca3787a9877c47adc35c287c8be72, type: 3}
   blueProjectilesAmount: 25
   greenProjectilesAmount: 50
   ovalProjectilesAmount: 25
   greenLasersAmount: 25
+  missilesAmount: 25
   projectilesParent: {fileID: 2147083718}
   greenParticlesPrefab: {fileID: 7607578839524449285, guid: ef2f081086eeb414ba277b6f070120e4, type: 3}
   blueParticlesPrefab: {fileID: 3599437791200316295, guid: 546dd7bc6d9a6ab419fb9e6538634aab, type: 3}
+  missileParticlesPrefab: {fileID: 6812184951719575035, guid: ac4da16d50a7d0941bf7d6c49cc37756, type: 3}
   projectilesParticlesParent: {fileID: 1807455347}
 --- !u!1 &2147083717
 GameObject:

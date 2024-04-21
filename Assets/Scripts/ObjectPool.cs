@@ -9,23 +9,28 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] private Projectile greenProjectilePrefab;
     [SerializeField] private Projectile ovalProjectilePrefab;
     [SerializeField] private Projectile greenLaserPrefab;
+    [SerializeField] private Projectile missilePrefab;
     [SerializeField] private int blueProjectilesAmount;
     [SerializeField] private int greenProjectilesAmount;
     [SerializeField] private int ovalProjectilesAmount;
     [SerializeField] private int greenLasersAmount;
+    [SerializeField] private int missilesAmount;
     [SerializeField] private Transform projectilesParent;
 
     [Space, Header("Projectiles particles")]
     [SerializeField] private GameObject greenParticlesPrefab;
     [SerializeField] private GameObject blueParticlesPrefab;
+    [SerializeField] private GameObject missileParticlesPrefab;
     [SerializeField] private Transform projectilesParticlesParent;
 
     private List<GameObject> blueProjectilesPool = new List<GameObject>();
     private List<GameObject> greenProjectilesPool = new List<GameObject>();
     private List<GameObject> ovalProjectilesPool = new List<GameObject>();
     private List<GameObject> greenLasersPool = new List<GameObject>();
+    private List<GameObject> missilesPool = new List<GameObject>();
     private List<GameObject> greenParticlesPool = new List<GameObject>();
     private List<GameObject> blueParticlesPool = new List<GameObject>();
+    private List<GameObject> missileParticlesPool = new List<GameObject>();
 
     public enum ObjectType
     {
@@ -34,8 +39,10 @@ public class ObjectPool : MonoBehaviour
         GREEN_PROJECTILE,
         OVAL_PROJECTILE,
         GREEN_LASER,
+        MISSILE,
         BLUE_PARTICLES,
-        GREEN_PARTICLES
+        GREEN_PARTICLES,
+        MISSILE_PARTICLES
     }
 
     public static ObjectPool Instance;
@@ -48,8 +55,10 @@ public class ObjectPool : MonoBehaviour
         CreatePool(greenProjectilePrefab.gameObject, greenProjectilesAmount, projectilesParent, greenProjectilesPool);
         CreatePool(ovalProjectilePrefab.gameObject, ovalProjectilesAmount, projectilesParent, ovalProjectilesPool);
         CreatePool(greenLaserPrefab.gameObject, greenLasersAmount, projectilesParent, greenLasersPool);
+        CreatePool(missilePrefab.gameObject, missilesAmount, projectilesParent, missilesPool);
         CreatePool(greenParticlesPrefab, blueProjectilesAmount, projectilesParticlesParent, greenParticlesPool);
         CreatePool(blueParticlesPrefab, blueProjectilesAmount, projectilesParticlesParent, blueParticlesPool);
+        CreatePool(missileParticlesPrefab, missilesAmount, projectilesParticlesParent, missileParticlesPool);
     }
 
     private void CreatePool(GameObject objectPrefab, int objectsAmount, Transform targetParent, List<GameObject> targetPool)
@@ -84,12 +93,20 @@ public class ObjectPool : MonoBehaviour
                 targetPool = greenLasersPool;
                 break;
 
+            case ObjectType.MISSILE:
+                targetPool = missilesPool;
+                break;
+
             case ObjectType.BLUE_PARTICLES:
                 targetPool = blueParticlesPool;
                 break;
 
             case ObjectType.GREEN_PARTICLES:
                 targetPool = greenParticlesPool;
+                break;
+
+            case ObjectType.MISSILE_PARTICLES:
+                targetPool = missileParticlesPool;
                 break;
 
             default:
