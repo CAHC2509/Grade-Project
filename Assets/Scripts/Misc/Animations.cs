@@ -17,7 +17,7 @@ public static class Animations
         public static readonly string Idle = "Idle";
         public static readonly string Run = "Run";
         public static readonly string Shoot = "Shoot";
-        public static readonly string Flametower = "Flametower";
+        public static readonly string Melee = "Melee";
         public static readonly string Missiles = "Missiles";
         public static readonly string Death = "Death";
     }
@@ -26,6 +26,7 @@ public static class Animations
     {
         public static readonly string Idle = "Idle";
         public static readonly string Run = "Run";
+        public static readonly string Melee = "Melee";
         public static readonly string Shoot = "Shoot";
         public static readonly string Death = "Death";
     }

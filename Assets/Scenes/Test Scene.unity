@@ -3731,6 +3731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Final Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 2003154579342243567, guid: 6549917b0d6be2c45b2342e45def8976, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3433125340620968165, guid: 6549917b0d6be2c45b2342e45def8976, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.5
@@ -3778,6 +3782,10 @@ PrefabInstance:
     - target: {fileID: 4057701017463935745, guid: 6549917b0d6be2c45b2342e45def8976, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212883637318137131, guid: 6549917b0d6be2c45b2342e45def8976, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4851140173873160436, guid: 6549917b0d6be2c45b2342e45def8976, type: 3}
       propertyPath: showGizmos

@@ -17,7 +17,7 @@ MonoBehaviour:
   health: 2500
   speed: 1.5
   rangeAttackDistance: 10
-  meleeAttackDistance: 2.5
-  fieldOfViewAngle: 90
-  fieldOfViewTolerancy: 0.15
+  meleeAttackDistance: 5
+  fieldOfViewAngle: 100
+  fieldOfViewTolerancy: 0.3
   projectilesAmount: 6
