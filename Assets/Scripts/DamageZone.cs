@@ -18,6 +18,11 @@ public class DamageZone : MonoBehaviour
             {
                 Vector2 pushDirection = (collision.transform.position - transform.position).normalized;
                 rigidbody2D.AddForce(pushDirection * pushingForce, forceMode);
+
+                IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
+
+                if (damageable is IDamageable)
+                    damageable.TakeDamage(damageInflicted);
             }
         }
     }

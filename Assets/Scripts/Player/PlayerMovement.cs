@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference verticalInputAction;
     [SerializeField] private InputActionReference horizontalInputAction;
     [SerializeField] private InputActionReference shootInputAction;
+    
     [HideInInspector] public PlayerData playerData;
 
     private Vector2 movementInput;

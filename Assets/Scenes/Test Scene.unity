@@ -563,8 +563,10 @@ GameObject:
   - component: {fileID: 161463617}
   - component: {fileID: 161463616}
   - component: {fileID: 161463621}
+  - component: {fileID: 161463625}
   - component: {fileID: 161463622}
   - component: {fileID: 161463623}
+  - component: {fileID: 161463624}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -791,6 +793,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 11400000, guid: 25d1fd926834bbc41bc87e8cae5fc60f, type: 2}
   abilityInput: {fileID: -6347864700817126106, guid: fa02262d5d0ae7c4f8581f8b38df4021, type: 3}
+--- !u!114 &161463624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161463613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c707bc07e48fe543858cb3e16753d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: e70360fbbbe6e1e43add55fe95f5db75, type: 2}
+  spriteRenderers:
+  - {fileID: 161463618}
+  flashDuration: 0.15
+--- !u!114 &161463625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161463613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd05583ac31c8d40aa8b51c5b969fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPlayerData: {fileID: 11400000, guid: 49e69ca3237a9b04a88f32444c8146ef, type: 2}
+  flashEffect: {fileID: 161463624}
+  playerData: {fileID: 0}
 --- !u!1 &205613148
 GameObject:
   m_ObjectHideFlags: 0
