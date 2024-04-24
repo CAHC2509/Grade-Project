@@ -1,22 +1,27 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FlashEffect : MonoBehaviour
 {
     [SerializeField] private Material flashMaterial;
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private List<SpriteRenderer> spriteRenderers;
     [SerializeField] private float flashDuration = 0.15f;
 
     private Material originalMaterial;
 
-    private void Start() => originalMaterial = spriteRenderer.material;
+    private void Start() => originalMaterial = spriteRenderers[0].material;
 
     public void SingleFlash() => StartCoroutine(SingleFlashCoroutine());
 
     private IEnumerator SingleFlashCoroutine()
     {
-        spriteRenderer.material = flashMaterial;
+        foreach (SpriteRenderer renderer in spriteRenderers)
+            renderer.material = flashMaterial;
+
         yield return new WaitForSeconds(flashDuration);
-        spriteRenderer.material = originalMaterial;
+
+        foreach (SpriteRenderer renderer in spriteRenderers)
+            renderer.material = originalMaterial;
     }
 }

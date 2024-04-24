@@ -202,7 +202,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: e70360fbbbe6e1e43add55fe95f5db75, type: 2}
-  spriteRenderer: {fileID: 4959612488079730297}
+  spriteRenderers:
+  - {fileID: 4959612488079730297}
   flashDuration: 0.15
 --- !u!114 &128511997785429749
 MonoBehaviour:

@@ -347,6 +347,7 @@ MonoBehaviour:
   flashEffect: {fileID: 4655326811641798794}
   projectilePrefab: {fileID: 1871152266651697960, guid: 6b3b90f94ac247c4fbcba533ad4be6da, type: 3}
   firePoint: {fileID: 882461474486468983}
+  showGizmos: 0
   enemyData: {fileID: 11400000, guid: 64c452a29e516f944858c5326490abc7, type: 2}
 --- !u!114 &5767814946556776819
 MonoBehaviour:
@@ -374,7 +375,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: e70360fbbbe6e1e43add55fe95f5db75, type: 2}
-  spriteRenderer: {fileID: 886336315883320623}
+  spriteRenderers:
+  - {fileID: 886336315883320623}
   flashDuration: 0.15
 --- !u!114 &5082078055037810825
 MonoBehaviour:
