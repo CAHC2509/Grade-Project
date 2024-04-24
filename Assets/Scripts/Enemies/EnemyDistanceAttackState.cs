@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyDistanceAttackState : EnemyBaseState
 {
+    private int attacksPerformed = 0;
+
     public override void EnterState(EnemyStateMachine stateMachine) { }
 
     public override void UpdateState(EnemyStateMachine stateMachine)
@@ -19,10 +21,30 @@ public class EnemyDistanceAttackState : EnemyBaseState
         bool lineOfSightClear = enemyController.LineOfSightClear();
 
         bool canShoot = playerIsInAttackRange && playerIsInFOV && lineOfSightClear;
+        bool isFinalBoss = stateMachine.finalBossStateMachine;
 
-        if (canShoot)
-            enemyController.animator.CrossFade(Animations.Enemy.Shoot, 0f);
+        if (!isFinalBoss)
+        {
+            if (canShoot)
+                enemyController.animator.CrossFade(Animations.Enemy.Shoot, 0f);
+            else
+                stateMachine.SwithState(stateMachine.chaseState);
+        }
         else
-            stateMachine.SwithState(stateMachine.chaseState);
+        {
+            if (canShoot)
+            {
+                if (attacksPerformed % 2 == 0)
+                    enemyController.animator.CrossFade(Animations.Boss.Missiles, 0f);
+                else
+                    enemyController.animator.CrossFade(Animations.Boss.Shoot, 0f);
+            }
+            else
+            {
+                stateMachine.SwithState(stateMachine.chaseState);
+            }
+
+            attacksPerformed++;
+        }
     }
 }

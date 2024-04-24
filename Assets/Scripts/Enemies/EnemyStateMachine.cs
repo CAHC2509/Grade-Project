@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class EnemyStateMachine : MonoBehaviour
 {
     [SerializeField] private EnemyController enemyController;
+    [SerializeField] private bool isFinalBoss;
 
     public EnemyIdleState idleState = new EnemyIdleState();
     public EnemyChaseState chaseState = new EnemyChaseState();
@@ -17,6 +17,7 @@ public class EnemyStateMachine : MonoBehaviour
     private string currentEnemyState;
 
     public EnemyController controller => enemyController;
+    public bool finalBossStateMachine => isFinalBoss;
 
     private void Start() => SwithState(idleState);
 
