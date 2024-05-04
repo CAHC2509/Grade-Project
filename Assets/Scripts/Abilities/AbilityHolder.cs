@@ -1,25 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class AbilityHolder : MonoBehaviour
 {
     [SerializeField] private Ability ability;
     [SerializeField] private InputActionReference abilityInput;
+    [SerializeField] private UnityEvent onAbilityActivated;
+    [SerializeField] private UnityEvent onAbilityReady;
 
     private float cooldownTime;
     private float activeTime;
     private AbilitySate state = AbilitySate.READY;
 
-    private enum AbilitySate
-    {
-        READY,
-        ACTIVE,
-        COOLDOWN
-    }
-
-    private void OnEnable() => abilityInput.action.Enable();
+    private enum AbilitySate { READY, ACTIVE, COOLDOWN };
 
     private void Update()
     {
@@ -31,6 +25,8 @@ public class AbilityHolder : MonoBehaviour
                     ability.Activate(gameObject);
                     state = AbilitySate.ACTIVE;
                     activeTime = ability.activeTime;
+
+                    onAbilityActivated?.Invoke();
                 }
                 break;
 
@@ -49,12 +45,15 @@ public class AbilityHolder : MonoBehaviour
 
             case AbilitySate.COOLDOWN:
                 if (cooldownTime > 0f)
+                {
                     cooldownTime -= Time.deltaTime;
+                }
                 else
+                {
                     state = AbilitySate.READY;
+                    onAbilityReady?.Invoke();
+                }
                 break;
         }
     }
-
-    private void OnDisable() => abilityInput.action.Disable();
 }
