@@ -1686,7 +1686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8954572941120852876, guid: 16fbff65f9cdbca4090a73029b477612, type: 3}
       propertyPath: doorState
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15589,7 +15589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8954572941120852876, guid: 16fbff65f9cdbca4090a73029b477612, type: 3}
       propertyPath: doorState
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17030,7 +17030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8954572941120852876, guid: 16fbff65f9cdbca4090a73029b477612, type: 3}
       propertyPath: doorState
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -117310,7 +117310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8954572941120852876, guid: 16fbff65f9cdbca4090a73029b477612, type: 3}
       propertyPath: doorState
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -141737,7 +141737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1460492193822050629, guid: 52e1c31b121ba984985726bf4685d757, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.5
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 1460492193822050629, guid: 52e1c31b121ba984985726bf4685d757, type: 3}
       propertyPath: m_LocalPosition.z

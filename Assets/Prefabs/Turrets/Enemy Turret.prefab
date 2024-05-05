@@ -452,3 +452,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretData: {fileID: 11400000, guid: 33cb4696532d0b24cbfe64cdc14d3707, type: 2}
   laser: {fileID: 3249635344857311397}
+  turretTransform: {fileID: 1460492193822050629}
