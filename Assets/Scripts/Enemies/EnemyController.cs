@@ -36,6 +36,12 @@ public class EnemyController : MonoBehaviour, IDamageable
         healthBar.InitializeHealthBar(enemyData.maxHealth, enemyData.health);
     }
 
+    private void Update()
+    {
+        if (enemyData.health <= 0f)
+            stateMachine.SwithState(stateMachine.deathState);
+    }
+
     public void CheckFacing()
     {
         Vector3 directionToPlayer = PlayerMovement.Instance.transform.position - transform.position;
@@ -94,9 +100,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         enemyData.health -= damageAmount;
 
         healthBar.UpdateHealthBar(enemyData.health);
-
-        if (enemyData.health <= 0f)
-            stateMachine.SwithState(stateMachine.deathState);
     }
 
     public bool IsPlayerInFieldOfVision()
