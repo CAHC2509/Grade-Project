@@ -7,6 +7,7 @@ public class EnemyTurretController : MonoBehaviour, IDamageable
     [Header("Turret components settings")]
     [SerializeField] private TurretData originalTurretData;
     [SerializeField] private TurretStateMachine stateMachine;
+    [SerializeField] private LayerMask playerDetectingLayer;
     [SerializeField] private Animator turretAnimator;
     [SerializeField] private Transform pointOfFire;
     [SerializeField] private FlashEffect flashEffect;
@@ -31,7 +32,7 @@ public class EnemyTurretController : MonoBehaviour, IDamageable
 
     public bool CheckLineOfSight()
     {
-        RaycastHit2D hit = Physics2D.Raycast(firePoint.position, firePoint.up, turretData.rangeAttackDistance);
+        RaycastHit2D hit = Physics2D.Raycast(firePoint.position, firePoint.up, turretData.rangeAttackDistance, playerDetectingLayer);
 
         if (hit.collider != null)
         {

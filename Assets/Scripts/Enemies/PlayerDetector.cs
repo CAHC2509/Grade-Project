@@ -5,11 +5,17 @@ using UnityEngine.Events;
 
 public class PlayerDetector : MonoBehaviour
 {
+    [Header("Detection components")]
     [SerializeField] private EnemyData enemyData;
     [SerializeField] private EnemyStateMachine stateMachine;
     [SerializeField] private CircleCollider2D circleCollider;
 
-    private void Start() => circleCollider.radius = enemyData.detectionRange;
+    [Space, Header("Custom properties")]
+    [SerializeField] private float customDetectionRange;
+    [SerializeField] private bool useCustomProperties;
+
+
+    private void Start() => circleCollider.radius = useCustomProperties ? customDetectionRange : enemyData.detectionRange;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,6 +26,6 @@ public class PlayerDetector : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, enemyData.detectionRange);
+        Gizmos.DrawWireSphere(transform.position, useCustomProperties ? customDetectionRange : enemyData.detectionRange);
     }
 }

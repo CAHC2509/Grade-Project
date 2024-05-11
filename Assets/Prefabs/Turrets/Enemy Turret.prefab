@@ -172,6 +172,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   originalTurretData: {fileID: 11400000, guid: 33cb4696532d0b24cbfe64cdc14d3707, type: 2}
   stateMachine: {fileID: 2336298816966531504}
+  playerDetectingLayer:
+    serializedVersion: 2
+    m_Bits: 64
   turretAnimator: {fileID: 7948690200451244978}
   pointOfFire: {fileID: 6562596179189638173}
   flashEffect: {fileID: 4816783866526951817}
@@ -312,7 +315,7 @@ GameObject:
   - component: {fileID: 6562596179189638173}
   - component: {fileID: 3249635344857311397}
   - component: {fileID: 4045834519081891290}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
