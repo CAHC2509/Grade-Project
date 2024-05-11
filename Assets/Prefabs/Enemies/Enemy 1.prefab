@@ -363,6 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyController: {fileID: 4550554776631546608}
+  maxChasingDistance: 25
   isFinalBoss: 0
 --- !u!114 &5264760463092671416
 MonoBehaviour:
