@@ -4,7 +4,8 @@ using UnityEngine;
 public class PlayerData : ScriptableObject
 {
     [Header("Base stats")]
-    public float life = 100f;
+    public float health = 100f;
+    public float maxHealth = 100f;
     public float speed = 5f;
 
     [Space, Header("Shooting stats")]
@@ -13,7 +14,8 @@ public class PlayerData : ScriptableObject
     public PlayerData GetCopy()
     {
         PlayerData copy = CreateInstance<PlayerData>();
-        copy.life = life;
+        copy.health = health;
+        copy.maxHealth = maxHealth;
         copy.speed = speed;
         copy.fireRate = fireRate;
 
