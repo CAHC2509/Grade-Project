@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b75df37a36b90468aa3efe432b6a89, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  life: 100
+  health: 100
+  maxHealth: 100
+  regenerationDelay: 2
+  regenerationRate: 15
   speed: 7.5
   fireRate: 1

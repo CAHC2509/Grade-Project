@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour, IDamageable
@@ -8,7 +7,10 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private FlashEffect flashEffect;
     [SerializeField] private bool receiveDamage;
-    
+
+    private Coroutine regenerationCoroutine;
+    private bool isRegenerating;
+
     [HideInInspector] public PlayerData playerData;
 
     private void Start()
@@ -30,6 +32,32 @@ public class PlayerHealth : MonoBehaviour, IDamageable
             {
                 Debug.Log("Player death");
             }
+            else
+            {
+                if (regenerationCoroutine != null)
+                    StopCoroutine(regenerationCoroutine);
+
+                regenerationCoroutine = StartCoroutine(RegenerateHealth());
+            }
         }
+    }
+
+    private IEnumerator RegenerateHealth()
+    {
+        yield return new WaitForSeconds(playerData.regenerationDelay);
+
+        isRegenerating = true;
+
+        while (playerData.health < playerData.maxHealth)
+        {
+            playerData.health += playerData.regenerationRate * Time.deltaTime;
+            playerData.health = Mathf.Min(playerData.health, playerData.maxHealth);
+
+            healthBar.UpdateHealthBar(playerData.health);
+
+            yield return null;
+        }
+
+        isRegenerating = false;
     }
 }

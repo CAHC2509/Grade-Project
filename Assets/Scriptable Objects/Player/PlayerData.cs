@@ -6,6 +6,9 @@ public class PlayerData : ScriptableObject
     [Header("Base stats")]
     public float health = 100f;
     public float maxHealth = 100f;
+    public float regenerationDelay = 4f;
+    public float regenerationRate = 10f;
+
     public float speed = 5f;
 
     [Space, Header("Shooting stats")]
@@ -16,6 +19,8 @@ public class PlayerData : ScriptableObject
         PlayerData copy = CreateInstance<PlayerData>();
         copy.health = health;
         copy.maxHealth = maxHealth;
+        copy.regenerationDelay = regenerationDelay;
+        copy.regenerationRate = regenerationRate;
         copy.speed = speed;
         copy.fireRate = fireRate;
 
