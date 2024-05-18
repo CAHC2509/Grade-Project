@@ -30,7 +30,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
             if (playerData.health <= 0f)
             {
-                Debug.Log("Player death");
+                PlayerDeath();
             }
             else
             {
@@ -40,6 +40,11 @@ public class PlayerHealth : MonoBehaviour, IDamageable
                 regenerationCoroutine = StartCoroutine(RegenerateHealth());
             }
         }
+    }
+
+    private void PlayerDeath()
+    {
+        Debug.Log("Player death");
     }
 
     private IEnumerator RegenerateHealth()
