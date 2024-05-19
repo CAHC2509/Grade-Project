@@ -1,15 +1,18 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
     [SerializeField] private PlayerData originalPlayerData;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private FlashEffect flashEffect;
+    [SerializeField] private GameObject playerDeathPrefab;
+    [SerializeField] private Material playerDefautMaterial;
+    [SerializeField] private UnityEvent onPlayerDeath;
     [SerializeField] private bool receiveDamage;
 
     private Coroutine regenerationCoroutine;
-    private bool isRegenerating;
 
     [HideInInspector] public PlayerData playerData;
 
@@ -22,6 +25,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public void TakeDamage(float damageAmount)
     {
         flashEffect.SingleFlash();
+        CameraShakeController.Instance.Shake(35f, 0.35f);
 
         if (receiveDamage)
         {
@@ -44,14 +48,22 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     private void PlayerDeath()
     {
-        Debug.Log("Player death");
+        Instantiate(playerDeathPrefab, transform.position, transform.rotation, null);
+        onPlayerDeath?.Invoke();
+        gameObject.SetActive(false);
+    }
+
+    public void Revive()
+    {
+        gameObject.SetActive(true);
+        GetComponent<SpriteRenderer>().material = playerDefautMaterial;
+        playerData.health = playerData.maxHealth;
+        healthBar.UpdateHealthBar(playerData.health);
     }
 
     private IEnumerator RegenerateHealth()
     {
         yield return new WaitForSeconds(playerData.regenerationDelay);
-
-        isRegenerating = true;
 
         while (playerData.health < playerData.maxHealth)
         {
@@ -62,7 +74,5 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
             yield return null;
         }
-
-        isRegenerating = false;
     }
 }
