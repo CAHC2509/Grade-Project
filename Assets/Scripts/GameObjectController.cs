@@ -15,4 +15,6 @@ public class GameObjectController : MonoBehaviour
     }
 
     public void ShakeCamera() => CameraShakeController.Instance.Shake(shakeIntensity, shakeDuration);
+
+    public void SpawnObject(GameObject prefab, Transform position) => Instantiate(prefab, position.position, Quaternion.identity, null);
 }

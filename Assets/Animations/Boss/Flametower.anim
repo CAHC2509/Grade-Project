@@ -154,7 +154,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Flametoower Damage Zone 1
+    path: Flametower Damage Zone 1
     classID: 1
     script: {fileID: 0}
     flags: 0
@@ -193,7 +193,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Flametoower Damage Zone 2
+    path: Flametower Damage Zone 2
     classID: 1
     script: {fileID: 0}
     flags: 0
@@ -256,7 +256,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2812771526
+      path: 2939012527
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -265,7 +265,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1051602300
+      path: 908366869
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -477,7 +477,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Flametoower Damage Zone 1
+    path: Flametower Damage Zone 1
     classID: 1
     script: {fileID: 0}
     flags: 0
@@ -516,7 +516,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Flametoower Damage Zone 2
+    path: Flametower Damage Zone 2
     classID: 1
     script: {fileID: 0}
     flags: 0
