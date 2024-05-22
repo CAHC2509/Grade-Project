@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     [SerializeField] private PlayerData originalPlayerData;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private FlashEffect flashEffect;
+    [SerializeField] private AudioSource playerHurtSFX;
     [SerializeField] private GameObject playerDeathPrefab;
     [SerializeField] private Material playerDefautMaterial;
     [SerializeField] private UnityEvent onPlayerDeath;
@@ -26,6 +27,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     {
         flashEffect.SingleFlash();
         CameraShakeController.Instance.Shake(35f, 0.35f);
+        playerHurtSFX?.Play();
 
         if (receiveDamage)
         {
