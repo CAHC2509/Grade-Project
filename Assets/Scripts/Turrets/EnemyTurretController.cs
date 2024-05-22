@@ -11,6 +11,8 @@ public class EnemyTurretController : MonoBehaviour, IDamageable
     [SerializeField] private Animator turretAnimator;
     [SerializeField] private Transform pointOfFire;
     [SerializeField] private FlashEffect flashEffect;
+    [SerializeField] private AudioSource hurtSFX;
+    [SerializeField] private AudioSource shootSFX;
 
     [HideInInspector]
     public TurretData turretData;
@@ -28,6 +30,8 @@ public class EnemyTurretController : MonoBehaviour, IDamageable
 
         Projectile projectileController = instanciatedProjectile.GetComponent<Projectile>();
         projectileController?.ApplyBulletSpeed(firePoint.up);
+
+        shootSFX?.Play();
     }
 
     public bool CheckLineOfSight()
@@ -47,6 +51,7 @@ public class EnemyTurretController : MonoBehaviour, IDamageable
     {
         flashEffect.SingleFlash();
         CameraShakeController.Instance.Shake(10f, 0.25f);
+        hurtSFX?.Play();
 
         turretData.health -= damageAmount;
 

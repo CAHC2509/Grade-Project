@@ -12,6 +12,8 @@ public class EnemyController : MonoBehaviour, IDamageable
     [SerializeField] private EnemyStateMachine stateMachine;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private FlashEffect flashEffect;
+    [SerializeField] private AudioSource hurtSFX;
+    [SerializeField] private AudioSource shootSFX;
 
     [Space, Header("Distance attack settings")]
     [SerializeField] private Projectile projectilePrefab;
@@ -58,6 +60,8 @@ public class EnemyController : MonoBehaviour, IDamageable
 
         Projectile projectileController = instanciatedProjectile.GetComponent<Projectile>();
         projectileController?.ApplyBulletSpeed(firePoint.up);
+
+        shootSFX?.Play();
     }
 
     public void LaunchLaser()
@@ -68,6 +72,8 @@ public class EnemyController : MonoBehaviour, IDamageable
 
         Projectile projectileController = instanciatedProjectile.GetComponent<Projectile>();
         projectileController?.ApplyBulletSpeed(firePoint.up);
+
+        shootSFX?.Play();
     }
 
     public void ProjectilesExplosion()
@@ -90,12 +96,15 @@ public class EnemyController : MonoBehaviour, IDamageable
             Projectile projectileController = instantiatedProjectile.GetComponent<Projectile>();
             projectileController?.ApplyBulletSpeed(new Vector2(x, y).normalized);
         }
+
+        shootSFX?.Play();
     }
 
     public void TakeDamage(float damageAmount)
     {
         flashEffect.SingleFlash();
         CameraShakeController.Instance.Shake(15f, 0.25f);
+        hurtSFX?.Play();
 
         enemyData.health -= damageAmount;
 

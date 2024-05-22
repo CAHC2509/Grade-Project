@@ -5,6 +5,7 @@ using UnityEngine;
 public class FinalBossController : EnemyController
 {
     [SerializeField] private Transform missilesFirePoint;
+    [SerializeField] private AudioSource missileSFX;
 
     public void LaunchMissile()
     {
@@ -14,5 +15,7 @@ public class FinalBossController : EnemyController
 
         Projectile projectileController = instanciatedProjectile.GetComponent<Projectile>();
         projectileController?.ApplyBulletSpeed(missilesFirePoint.up);
+
+        missileSFX?.Play();
     }
 }
