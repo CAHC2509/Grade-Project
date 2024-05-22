@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class QuestController : MonoBehaviour
 {
     [SerializeField] private DragDropManager dragDropManager;
+    [SerializeField] private AudioSource questCompletedSFX;
     [SerializeField] private UnityEvent onQuestCompleted;
 
     private void OnEnable() => InputActionsManager.Instance.DisableInteractions();
@@ -23,6 +24,7 @@ public class QuestController : MonoBehaviour
                 objectSettings.LockObject = true;
 
                 onQuestCompleted?.Invoke();
+                questCompletedSFX?.Play();
             }
         }
     }

@@ -93,6 +93,8 @@ public class ObjectSettings : MonoBehaviour {
 	[Tooltip ("The Ids of the panels that object is allowed to drop on them")]
 	public string[] AllowedPanels;
 
+	public AudioSource objectDroppedSFX;
+
 	[Header ("Events Management")]
 	public UnityEvent OnBeginDragging;
 	public UnityEvent OnDragDropFailed;
@@ -369,7 +371,8 @@ public class ObjectSettings : MonoBehaviour {
 
 		// Events Management
 		if (OnDroppedSuccessfully != null) {
-			OnDroppedSuccessfully.Invoke ();
+			OnDroppedSuccessfully.Invoke();
+			objectDroppedSFX?.Play();
 		}
 	}
 

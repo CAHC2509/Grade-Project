@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class ComputerController : MonoBehaviour
 {
     [SerializeField] private InputActionReference interactionInput;
+    [SerializeField] private AudioSource interactionSFX;
     [SerializeField] private UnityEvent onPlayerEnter;
     [SerializeField] private UnityEvent onPlayerExit;
     [SerializeField] private UnityEvent onPlayerInteraction;
@@ -22,7 +23,10 @@ public class ComputerController : MonoBehaviour
         if (playerIsNear)
         {
             if (interactionInput.action.triggered)
+            {
                 onPlayerInteraction?.Invoke();
+                interactionSFX?.Play();
+            }
         }
     }
 
