@@ -7,6 +7,8 @@ public class InputActionsManager : MonoBehaviour
 {
     [SerializeField] private InputActionAsset inputActionMap;
 
+    private InputActionReference reference;
+
     public static InputActionsManager Instance;
 
     private void Awake() => Instance = this;
@@ -25,5 +27,13 @@ public class InputActionsManager : MonoBehaviour
     {
         foreach (InputAction input in inputActionMap)
             input.Enable();
+    }
+
+    public void ChangeInputActionActiveState(InputActionReference inputAction, bool state)
+    {
+        if (state)
+            inputAction.action.Enable();
+        else
+            inputAction.action.Disable();
     }
 }
