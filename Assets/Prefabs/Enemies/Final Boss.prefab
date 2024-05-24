@@ -680,7 +680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92aac6793d660c54d97120a0ac004ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageInflicted: 0
+  damageInflicted: 25
   pushingForce: 2500
   forceMode: 0
 --- !u!1 &2590264485212975187
@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92aac6793d660c54d97120a0ac004ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageInflicted: 0
+  damageInflicted: 25
   pushingForce: 2500
   forceMode: 0
 --- !u!1 &3462285995102707255
