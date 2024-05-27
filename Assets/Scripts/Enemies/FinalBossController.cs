@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class FinalBossController : EnemyController
 {
@@ -17,5 +18,12 @@ public class FinalBossController : EnemyController
         projectileController?.ApplyBulletSpeed(missilesFirePoint.up);
 
         missileSFX?.Play();
+    }
+
+    private void OnDisable()
+    {
+        GameObject flowchartObject = GameObject.FindGameObjectWithTag(Tags.GameFlowchart);
+        Flowchart gameFlowchart = flowchartObject.GetComponent<Flowchart>();
+        gameFlowchart.SendFungusMessage("FINALBOSSDEATH");
     }
 }
